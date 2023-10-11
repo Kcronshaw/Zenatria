@@ -12,11 +12,13 @@ public class Enemy : MonoBehaviour
     public float distanceToTarget;
 
     public int health = 3;
+    public int damageDealt = 1;
 
     public Spawner spawner;
     void Start()
     {
         target = Waypoints.points[0];
+        transform.position = target.position;
     }
 
     // Update is called once per frame
@@ -32,6 +34,7 @@ public class Enemy : MonoBehaviour
 
             if (wavepointIndex >= Waypoints.points.Length)
             {
+                DealDamage();
                 Destroy(gameObject);
                 return;
             }
@@ -55,6 +58,11 @@ public class Enemy : MonoBehaviour
             Debug.Log("calling");
             Destroy(gameObject);
         }
+    }
+
+    public void DealDamage()
+    {
+        TowerBuilder.instance.takeDamage(damageDealt);
     }
 
 }

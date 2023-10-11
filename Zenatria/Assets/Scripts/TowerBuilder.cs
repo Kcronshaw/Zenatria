@@ -1,12 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TowerBuilder : MonoBehaviour
 {
     public static TowerBuilder instance;
 
     public int money = 50;
+    public bool holdingTower = false;
+    public int health = 100;
+    public Text healthText;
+
+
     private void Awake()
     {
         //lets other scripts refernce this without needing to hard code it, or use inspector
@@ -18,24 +24,44 @@ public class TowerBuilder : MonoBehaviour
     }
 
 
-    public GameObject normalTowerPrefab;
+    public GameObject fakeTowerPrefab;
 
     private void Start()
     {
         
     }
 
+    public void takeDamage(int damage)
+    {
+        health -= damage;
+        healthText.text = "x" + health.ToString();
+        if (health <= 0)
+        {
+            Debug.Log("KILL YOURSELF NOW!!!");
+        }
+    }
 
     public void createTower(int towerToBuild)
     {
-        switch (towerToBuild)
+        if (holdingTower == false)
         {
-            case 1:
-                Instantiate(normalTowerPrefab);
-                break;
-            default:
-                break;
+
+
+            switch (towerToBuild)
+            {
+                case 1:
+                    Instantiate(fakeTowerPrefab);
+                    break;
+                default:
+                    break;
+            }
+
+            holdingTower = true;
+
+
         }
+
+        
     }
 
 }
