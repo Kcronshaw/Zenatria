@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
             if (wavepointIndex >= Waypoints.points.Length)
             {
                 DealDamage();
+                spawner.EnemiesAlive --;
                 Destroy(gameObject);
                 return;
             }

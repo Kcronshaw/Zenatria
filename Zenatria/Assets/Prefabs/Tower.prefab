@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4492588429561524375}
   - component: {fileID: 1252966795278018045}
   - component: {fileID: 1354637667113035457}
-  - component: {fileID: 8736640479344591597}
+  - component: {fileID: 1549451572722094123}
+  - component: {fileID: 2112008857}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Unplaceable
@@ -107,8 +108,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &8736640479344591597
-BoxCollider2D:
+--- !u!114 &1549451572722094123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4346785311561490335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49070299a22de56459e9f96bf189447a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetedEnemy: {fileID: 0}
+  attackDamage: 1
+  nextAttack: 1
+  attackSpeed: 0.1
+  range: 3
+  attackAnimation: {fileID: 0}
+  attackSwing: {fileID: 0}
+--- !u!58 &2112008857
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -121,15 +141,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 1.5
