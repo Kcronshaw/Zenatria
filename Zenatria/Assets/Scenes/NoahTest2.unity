@@ -921,7 +921,7 @@ MonoBehaviour:
   holdingTower: 0
   health: 100
   healthText: {fileID: 587809515}
-  fakeTowerPrefab: {fileID: 7464272766202493894, guid: e3b32778d09322c469f9f972c26ba9d0, type: 3}
+  fakeTowerPrefab: {fileID: 6604482848647253338, guid: ec14a4802eec92f4d96959b090d94d39, type: 3}
 --- !u!4 &275501116
 Transform:
   m_ObjectHideFlags: 0
@@ -1496,7 +1496,7 @@ MonoBehaviour:
   EnemiesAlive: 0
   spawnPoint: {fileID: 687073508}
   waves:
-  - enemy: {fileID: 2852770444282898799, guid: c469ae44959c7064bb5e44d3c7f5e8c5, type: 3}
+  - enemy: {fileID: 4235755898866716828, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
     count: 5
     rate: 0.3
     cashGen: 0
@@ -8574,7 +8574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1706505641
 SpriteRenderer:
   m_ObjectHideFlags: 0
