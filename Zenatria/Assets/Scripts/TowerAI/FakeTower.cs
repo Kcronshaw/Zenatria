@@ -11,16 +11,9 @@ public class FakeTower : MonoBehaviour
     public GameObject towerToBuild;
 
 
-    EnemyDetector enemyDetector;
-    public GameObject rangeVisualizer;
-
     void Start()
     {
         //TowerBuilder.instance.holdingTower = true;
-
-        enemyDetector = towerToBuild.GetComponentInChildren<EnemyDetector>();
-        rangeVisualizer.transform.localScale = new Vector3(2 * enemyDetector.range, 2 * enemyDetector.range);
-
     }
 
     // Update is called once per frame

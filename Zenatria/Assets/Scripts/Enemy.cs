@@ -1,10 +1,9 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BigSlime : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    
     public float speed = 1f;
 
     private Transform target;
@@ -16,13 +15,6 @@ public class BigSlime : MonoBehaviour
     public int damageDealt = 1;
 
     public Spawner spawner;
-
-
-
-
-    public GameObject babySlime;
-    public int numberOfBabies;
-
     void Start()
     {
         target = Waypoints.points[0];
@@ -43,7 +35,7 @@ public class BigSlime : MonoBehaviour
             if (wavepointIndex >= Waypoints.points.Length)
             {
                 DealDamage();
-                spawner.EnemiesAlive--;
+                spawner.EnemiesAlive --;
                 Destroy(gameObject);
                 return;
             }
@@ -63,8 +55,6 @@ public class BigSlime : MonoBehaviour
 
         if (health <= 0)
         {
-
-
             spawner.GetComponent<Spawner>().EnemyKilled();
             Debug.Log("calling");
             Destroy(gameObject);
@@ -76,17 +66,4 @@ public class BigSlime : MonoBehaviour
         TowerBuilder.instance.takeDamage(damageDealt);
     }
 
-
-    public void SlimeSplit()
-    {
-        for (int i = 0; i < numberOfBabies; i++)
-        {
-            GameObject babyslime = Instantiate(babySlime, this.transform);
-            spawner.EnemiesAlive++;
-            BabySlime babieScripto = babyslime.GetComponent<BabySlime>();
-            babieScripto.target = target;
-            babieScripto.wavepointIndex = wavepointIndex;
-        }
-        
-    }
 }
