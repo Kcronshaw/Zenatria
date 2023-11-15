@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Unplaceable
   - Enemy
+  - Turn Left
+  - Turn Right
   layers:
   - Default
   - TransparentFX
