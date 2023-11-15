@@ -6,8 +6,7 @@ TagManager:
   tags:
   - Unplaceable
   - Enemy
-  - Turn Left
-  - Turn Right
+  - Spawner
   layers:
   - Default
   - TransparentFX
@@ -15,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 
