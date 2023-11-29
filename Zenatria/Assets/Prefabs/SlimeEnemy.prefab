@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 1114018941600591000}
   - component: {fileID: 1143435305565621301}
   - component: {fileID: 785733310740110752}
-  m_Layer: 0
+  - component: {fileID: 3131553331987621583}
+  - component: {fileID: 4497597072765238374}
+  m_Layer: 6
   m_Name: SlimeEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -119,9 +121,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: Slime
   speed: 3
+  target: {fileID: 0}
   wavepointIndex: 0
   distanceToTarget: 0
   health: 5
   damageDealt: 1
   spawner: {fileID: 0}
+  dying: 0
+  spriteRenderer: {fileID: 0}
+  babySlime: {fileID: 1690532299642731021, guid: a041626804bb0447eb96b82c404699fd, type: 3}
+  numberOfBabies: 5
+  parentSlime: {fileID: 0}
+  parentSlimeScript: {fileID: 0}
+  spawnerObject: {fileID: 0}
+--- !u!114 &3131553331987621583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6603168925892111095}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyType: Slime
+  speed: 2
+  target: {fileID: 0}
+  wavepointIndex: 0
+  distanceToTarget: 0
+  health: 3
+  damageDealt: 1
+  spawner: {fileID: 0}
+  dying: 0
+  spriteRenderer: {fileID: 0}
+  babySlime: {fileID: 3573834380232408566, guid: 90c4ee1edcfe78949a31c3b77ab9db09, type: 3}
+  numberOfBabies: 5
+  parentSlime: {fileID: 0}
+  parentSlimeScript: {fileID: 0}
+  spawnerObject: {fileID: 0}
+--- !u!61 &4497597072765238374
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6603168925892111095}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.47, y: 0.32}
+    newSize: {x: 0.47, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.47, y: 0.32}
+  m_EdgeRadius: 0

@@ -889,7 +889,7 @@ GameObject:
   - component: {fileID: 7748879992926505362}
   - component: {fileID: 3301920148910336377}
   - component: {fileID: 7737787506330993339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Goblin_Thief
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -997,12 +997,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: Goblin
   speed: 1
+  target: {fileID: 0}
   wavepointIndex: 0
   distanceToTarget: 0
   health: 3
   damageDealt: 1
   spawner: {fileID: 0}
+  dying: 0
+  spriteRenderer: {fileID: 0}
+  babySlime: {fileID: 0}
+  numberOfBabies: 0
+  parentSlime: {fileID: 0}
+  parentSlimeScript: {fileID: 0}
+  spawnerObject: {fileID: 0}
 --- !u!61 &7748879992926505362
 BoxCollider2D:
   m_ObjectHideFlags: 0
