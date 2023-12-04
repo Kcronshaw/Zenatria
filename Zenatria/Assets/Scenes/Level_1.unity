@@ -10656,6 +10656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin_Thief
       objectReference: {fileID: 0}
+    - target: {fileID: 4235755898866716828, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
 --- !u!1 &2129178345
@@ -10834,6 +10838,10 @@ PrefabInstance:
     - target: {fileID: 6604482848647253338, guid: ec14a4802eec92f4d96959b090d94d39, type: 3}
       propertyPath: m_Name
       value: HumanFighter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604482848647253338, guid: ec14a4802eec92f4d96959b090d94d39, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec14a4802eec92f4d96959b090d94d39, type: 3}
