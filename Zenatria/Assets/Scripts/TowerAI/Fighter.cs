@@ -18,6 +18,9 @@ public class Fighter : MonoBehaviour
 
     public CircleCollider2D rangeVisual;
 
+    public int currentLevel = 1;
+
+
 
     void Start()
     {
@@ -28,7 +31,10 @@ public class Fighter : MonoBehaviour
 
     private void Update()
     {
-
+        if(Input.GetKeyDown("q"))
+        {
+            Upgrade();
+        }
 
 
     }
@@ -42,6 +48,32 @@ public class Fighter : MonoBehaviour
         //Instantiate(attackAnimation);
 
     }
+
+
+
+    public void Upgrade()
+    {
+        switch (currentLevel)
+        {
+            case 1:
+                attackSpeed -= 0.3f;
+                break;
+            case 2:
+                attackDamage++;
+                break;
+            case 3:
+                // resistance immunity
+                break;
+            case 4:
+                attackSpeed -= 0.3f;
+                break;
+        }
+        
+        
+        currentLevel ++;
+
+        }
+
 
 
 
