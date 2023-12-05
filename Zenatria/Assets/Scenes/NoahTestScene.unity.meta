@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Zenatria/Assets/Scenes/Level_3.unity.meta
+guid: 8946f75cfba7842b2aa3f4d6ba93e82c
+========
 guid: 8a37f2bd1a640544481f3e19657c9a00
+>>>>>>>> main:Zenatria/Assets/Scenes/NoahTestScene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
