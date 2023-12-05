@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour
             Debug.Log(parentSlimeScript.target);
             wavepointIndex = parentSlimeScript.wavepointIndex;
             StartCoroutine(ParentDeletor()); 
-            //I genuinely dont know why i need to wait here but i fucking do deal with it;
+            //I genuinely dont know why i need to wait here but i fucking do deal with it
         }
         else
         {

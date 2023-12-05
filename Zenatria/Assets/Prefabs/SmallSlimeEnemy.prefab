@@ -126,7 +126,7 @@ MonoBehaviour:
   target: {fileID: 0}
   wavepointIndex: 0
   distanceToTarget: 0
-  health: 1
+  health: 3
   damageDealt: 1
   spawner: {fileID: 0}
   dying: 0

@@ -43,7 +43,6 @@ public class Fighter : MonoBehaviour
 
     public void Attack()
     {
-        Debug.Log("running");
         targetedEnemyScript.TakeDamage(attackDamage);
         //Instantiate(attackAnimation);
 
