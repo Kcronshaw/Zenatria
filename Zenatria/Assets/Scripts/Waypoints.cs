@@ -6,7 +6,7 @@ using UnityEngine;
 public class Waypoints : MonoBehaviour
 {
 
-    public static (float X, float Y)[] waypoints;
+    public static Vector2[] waypoints;
 
     public static Vector2[] paths;
 
@@ -14,16 +14,16 @@ public class Waypoints : MonoBehaviour
 
     private void Awake()
     {
-        waypoints = new (float X, float Y)[transform.childCount];
+        waypoints = new Vector2[transform.childCount];
         for (int i = 0; i < waypoints.Length; i++)
         {
             var temp = transform.GetChild(i);
-            waypoints[i] = (temp.position.x, temp.position.y);
+            waypoints[i] = new Vector2(temp.position.x, temp.position.y);
         }
 
         for (int i = 0;i < waypoints.Length-1; i++)
         {
-            waypoints[i+1] - waypoints[i]
+            //waypoints[i + 1] - waypoints[i]
         }
     }
 
