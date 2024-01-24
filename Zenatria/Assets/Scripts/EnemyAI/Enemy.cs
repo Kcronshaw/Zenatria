@@ -1,39 +1,151 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Enemy : MonoBehaviour
 {
 
     [Header("Generic Enemy Variables")]
 
-    public string enemyType;
+    [SerializeField]
+    [FormerlySerializedAs("enemyType")]
+    private string _enemyType;
+    public string enemyType
+    {
+        get { return _enemyType; }
+        protected set { _enemyType = value; }
+    }
 
-    public float speed = 1f;
+    [SerializeField]
+    [FormerlySerializedAs("speed")]
+    private float _speed = 1f;
+    public float speed
+    {
+        get { return _speed; }
+        set { _speed = value; }
+    }
 
-    public Transform target;
-    public int wavepointIndex = 0;
+    [SerializeField]
+    [FormerlySerializedAs("target")]
+    private Transform _target;
+    public Transform target
+    {
+        get { return _target; }
+        set { _target = value; }
+    }
 
-    public float distanceToTarget;
+    [SerializeField]
+    [FormerlySerializedAs("wavepointIndex")]
+    private int _wavepointIndex = 0;
+    public int wavepointIndex
+    {
+        get => _wavepointIndex;
+        set => _wavepointIndex = value;
+    }
 
-    public int health = 3;
-    public int damageDealt = 1;
+    [SerializeField]
+    [FormerlySerializedAs("distanceToTarget")]
+    private float _distanceToTarget;
+    public float distanceToTarget
+    {
+        get => _distanceToTarget;
+        private set => _distanceToTarget = value;
+    }
 
-    public Spawner spawner;
+    [SerializeField]
+    [FormerlySerializedAs("health")]
+    private int _health;
+    public int health
+    {
+        get => _health;
+        set => _health = value;
+    }
 
-    public bool dying = false;
+    [SerializeField]
+    [FormerlySerializedAs("damageDealt")]
+    private int _damageDealt = 1;
+    public int damageDealt
+    {
+        get => _damageDealt;
+        set => _damageDealt = value;
+    }
 
-    public SpriteRenderer spriteRenderer;
+    [SerializeField]
+    [FormerlySerializedAs("spawner")]
+    private Spawner _spawner;
+    public Spawner spawner
+    {
+        get => _spawner;
+        set => _spawner = value;
+    }
+
+    [SerializeField]
+    [FormerlySerializedAs("dying")]
+    private bool _dying = false;
+    public bool dying
+    {
+        get => _dying;
+        set => _dying = value;
+    }
+
+    [SerializeField]
+    [FormerlySerializedAs("spriteRenderer")]
+    private SpriteRenderer _spriteRenderer;
+    public SpriteRenderer spriteRenderer
+    {
+        get => _spriteRenderer;
+        set => _spriteRenderer = value;
+    }
+
 
 
     [Header("Slime Enemy Variables")]
-    public GameObject babySlime;
-    public int numberOfBabies;
-    public GameObject parentSlime;
-    public Enemy parentSlimeScript;
 
+    [SerializeField]
+    [FormerlySerializedAs("babySlime")]
+    private GameObject _babySlime;
+    public GameObject babySlime
+    {
+        get => _babySlime;
+        set => _babySlime = value;
+    }
 
-    public GameObject spawnerObject;
+    [SerializeField]
+    [FormerlySerializedAs("numberOfBabies")]
+    private int _numberOfBabies;
+    public int numberOfBabies
+    {
+        get => _numberOfBabies;
+        set => _numberOfBabies = value;
+    }
+
+    [SerializeField]
+    [FormerlySerializedAs("parentSlime")]
+    private GameObject _parentSlime;
+    public GameObject parentSlime
+    {
+        get => _parentSlime;
+        set => _parentSlime = value;
+    }
+
+    [SerializeField]
+    [FormerlySerializedAs("parentSlimeScript")]
+    private Enemy _parentSlimeScript;
+    public Enemy parentSlimeScript
+    {
+        get => _parentSlimeScript;
+        set => _parentSlimeScript = value;
+    }
+
+    [SerializeField]
+    [FormerlySerializedAs("spawnerObject")]
+    private GameObject _spawnerObject;
+    public GameObject spawnerObject
+    {
+        get => _spawnerObject;
+        set => _spawnerObject = value;
+    }
 
     void Start()
     {

@@ -5,13 +5,16 @@ using UnityEngine;
 public class EnemyDetector : MonoBehaviour
 {
     public float range;
-    public GameObject parentTower;
+    //public GameObject parentTower;
+
+    private GameObject parentTower;
     Fighter fighterScript;
     public GameObject enemy;
 
 
     void Start()
     {
+        parentTower = transform.parent.gameObject;
         fighterScript = parentTower.GetComponent<Fighter>();   
     }
 

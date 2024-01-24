@@ -1,20 +1,32 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Waypoints : MonoBehaviour
 {
 
-    public static Transform[] points;
+    public static (float X, float Y)[] waypoints;
+
+    public static Vector2[] paths;
+
 
 
     private void Awake()
     {
-        points = new Transform[transform.childCount];
-        for (int i = 0; i < points.Length; i++)
+        waypoints = new (float X, float Y)[transform.childCount];
+        for (int i = 0; i < waypoints.Length; i++)
         {
-            points[i] = transform.GetChild(i);
+            var temp = transform.GetChild(i);
+            waypoints[i] = (temp.position.x, temp.position.y);
+        }
+
+        for (int i = 0;i < waypoints.Length-1; i++)
+        {
+            waypoints[i+1] - waypoints[i]
         }
     }
+
+
 
 }
