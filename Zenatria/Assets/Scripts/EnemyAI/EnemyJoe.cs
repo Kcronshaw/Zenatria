@@ -1,6 +1,7 @@
 using HutongGames.PlayMaker.Actions;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -109,8 +110,8 @@ public class EnemyJoe : MonoBehaviour
         set => _spriteRenderer = value;
     }
 
-    
-    
+    protected Bridge bridgeOn = null;
+
 
     protected virtual void Start()
     {
@@ -137,6 +138,22 @@ public class EnemyJoe : MonoBehaviour
         if (target == null)
         {
             Debug.LogError("Target is null.");
+            return;
+        }
+        bool canMove = true;
+        if (bridgeOn != null)
+        {
+            if (bridgeOn.Broken)
+            {
+                canMove = false;
+            } else
+            {
+                canMove = true;
+            }
+        }
+
+        if (!canMove)
+        {
             return;
         }
 
@@ -169,6 +186,18 @@ public class EnemyJoe : MonoBehaviour
             wavepointIndex++;
             target = Waypoints.points[wavepointIndex];
 
+        } else
+        {
+            foreach (Bridge bridge in Waypoints.bridges)
+            {
+                if (bridge.atBegin(transform.position))
+                {
+                    if (bridge.Broken)
+                    {
+
+                    }
+                }
+            }
         }
     }
 
