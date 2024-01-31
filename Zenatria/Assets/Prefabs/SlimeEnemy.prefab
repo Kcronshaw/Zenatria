@@ -121,21 +121,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: Slime
-  speed: 3
-  target: {fileID: 0}
-  wavepointIndex: 0
-  distanceToTarget: 0
-  health: 5
-  damageDealt: 1
-  spawner: {fileID: 0}
-  dying: 0
-  spriteRenderer: {fileID: 0}
-  babySlime: {fileID: 1690532299642731021, guid: a041626804bb0447eb96b82c404699fd, type: 3}
-  numberOfBabies: 5
-  parentSlime: {fileID: 0}
-  parentSlimeScript: {fileID: 0}
-  spawnerObject: {fileID: 0}
+  _enemyType: Slime
+  _speed: 3
+  _target: {fileID: 0}
+  _wavepointIndex: 0
+  _distanceToTarget: 0
+  _health: 5
+  _damageDealt: 1
+  _spawner: {fileID: 0}
+  _dying: 0
+  _spriteRenderer: {fileID: 0}
+  _babySlime: {fileID: 1690532299642731021, guid: a041626804bb0447eb96b82c404699fd, type: 3}
+  _numberOfBabies: 5
+  _parentSlime: {fileID: 0}
+  _parentSlimeScript: {fileID: 0}
+  _spawnerObject: {fileID: 0}
 --- !u!114 &3131553331987621583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,21 +148,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: Slime
-  speed: 2
-  target: {fileID: 0}
-  wavepointIndex: 0
-  distanceToTarget: 0
-  health: 3
-  damageDealt: 1
-  spawner: {fileID: 0}
-  dying: 0
-  spriteRenderer: {fileID: 0}
-  babySlime: {fileID: 3573834380232408566, guid: 90c4ee1edcfe78949a31c3b77ab9db09, type: 3}
-  numberOfBabies: 5
-  parentSlime: {fileID: 0}
-  parentSlimeScript: {fileID: 0}
-  spawnerObject: {fileID: 0}
+  _enemyType: Slime
+  _speed: 2
+  _target: {fileID: 0}
+  _wavepointIndex: 0
+  _distanceToTarget: 0
+  _health: 3
+  _damageDealt: 1
+  _spawner: {fileID: 0}
+  _dying: 0
+  _spriteRenderer: {fileID: 0}
+  _babySlime: {fileID: 3573834380232408566, guid: 90c4ee1edcfe78949a31c3b77ab9db09, type: 3}
+  _numberOfBabies: 5
+  _parentSlime: {fileID: 0}
+  _parentSlimeScript: {fileID: 0}
+  _spawnerObject: {fileID: 0}
 --- !u!61 &4497597072765238374
 BoxCollider2D:
   m_ObjectHideFlags: 0
