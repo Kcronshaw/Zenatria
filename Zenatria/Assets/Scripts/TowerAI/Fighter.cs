@@ -31,10 +31,6 @@ public class Fighter : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown("q"))
-        {
-            Upgrade();
-        }
 
 
     }
