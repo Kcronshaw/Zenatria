@@ -7,6 +7,9 @@ TagManager:
   - Unplaceable
   - Enemy
   - Spawner
+  - Turn Right
+  - Turn Left
+  - Tower
   layers:
   - Default
   - TransparentFX

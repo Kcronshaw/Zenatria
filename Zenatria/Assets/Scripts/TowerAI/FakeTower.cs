@@ -6,7 +6,7 @@ public class FakeTower : MonoBehaviour
 {
 
     bool canPlace = true;
-    int towerCost = 5;
+    [SerializeField] int towerCost = 5;
     public SpriteRenderer spriteRenderer;
     public GameObject towerToBuild;
 
@@ -38,6 +38,14 @@ public class FakeTower : MonoBehaviour
         {
             spriteRenderer.color = Color.blue;
         }
+
+
+        if(Input.GetMouseButtonDown(1))
+        {
+            TowerBuilder.instance.holdingTower = false;
+            Destroy(this.gameObject);
+        }
+
     }
 
     private void OnMouseDown()
@@ -47,6 +55,7 @@ public class FakeTower : MonoBehaviour
             if (TowerBuilder.instance.money >= towerCost)
             {
                 TowerBuilder.instance.money -= towerCost;
+                TowerBuilder.instance.CostUpdate();
                 Debug.Log(TowerBuilder.instance.money + " is current balance");
                 PlaceTower();
             }
@@ -56,7 +65,7 @@ public class FakeTower : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
 
-        if (collision.tag == "Unplaceable")
+        if (collision.tag == "Unplaceable" || collision.tag == "Tower")
         {
             canPlace = false;
         }

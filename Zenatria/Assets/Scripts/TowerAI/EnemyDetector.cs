@@ -41,7 +41,7 @@ public class EnemyDetector : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
-            Debug.Log("Detected");
+            //Debug.Log("Detected");
             DetectTarget();
         }
     }

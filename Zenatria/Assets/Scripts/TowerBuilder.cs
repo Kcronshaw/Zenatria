@@ -8,10 +8,14 @@ public class TowerBuilder : MonoBehaviour
     public static TowerBuilder instance;
 
     public int money = 50;
+    public Text moneyText;
+
     public bool holdingTower = false;
     public int health = 100;
     public Text healthText;
 
+
+    public GameObject fakeTowerPrefab;
 
     private void Awake()
     {
@@ -24,7 +28,7 @@ public class TowerBuilder : MonoBehaviour
     }
 
 
-    public GameObject fakeTowerPrefab;
+    
 
     private void Start()
     {
@@ -46,7 +50,6 @@ public class TowerBuilder : MonoBehaviour
         if (holdingTower == false)
         {
 
-
             switch (towerToBuild)
             {
                 case 1:
@@ -62,6 +65,11 @@ public class TowerBuilder : MonoBehaviour
         }
 
         
+    }
+
+    public void CostUpdate()
+    {
+        moneyText.text = money.ToString();
     }
 
 }
