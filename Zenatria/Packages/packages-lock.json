@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.aela.easy-feedback": {
+      "version": "file:com.aela.easy-feedback",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
