@@ -127,7 +127,7 @@ MonoBehaviour:
   wavepointIndex: 0
   distanceToTarget: 0
   health: 5
-  damageDealt: 1
+  damageDealt: 7
   spawner: {fileID: 0}
   dying: 0
   spriteRenderer: {fileID: 0}
