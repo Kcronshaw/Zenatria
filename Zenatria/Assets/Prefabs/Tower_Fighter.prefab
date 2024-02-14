@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2921214586597117075}
   m_Layer: 0
   m_Name: Tower_Fighter
-  m_TagString: Unplaceable
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   targetedEnemyScript: {fileID: 0}
   attackDamage: 1
   nextAttack: 1
-  attackSpeed: 0.1
+  attackSpeed: 0.5
   attackAnimation: {fileID: 0}
   attackSwing: {fileID: 0}
   rangeVisual: {fileID: 0}
