@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11952,7 +11952,7 @@ MonoBehaviour:
         x: 52.851562
         y: 175.82031
         width: 100
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -11966,17 +11966,28 @@ MonoBehaviour:
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Skip Dialog
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Wait 12
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
         - HutongGames.PlayMaker.Actions.StringTypewriter
         - HutongGames.PlayMaker.Actions.SetProperty
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0100
-        actionStartIndex: 000000000c000000
-        actionHashCodes: 335c45055ac85204
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010000
+        actionStartIndex: 000000000400000010000000
+        actionHashCodes: a4c8bf00335c45055ac85204
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -12168,6 +12179,12 @@ MonoBehaviour:
           value: 10
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 1
+          name: Skip?
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -12180,15 +12197,21 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
+        - Skip Dialog
+        - 
         - Continue
         - '     Optional Sounds Section:'
-        byteData: 01010101
+        byteData: 0001010101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 12000000120000000f0000000f00000011000000010000001700000003000000010000000100000018000000140000002400000001000000
+        paramDataType: 1100000017000000170000000100000012000000120000000f0000000f00000011000000010000001700000003000000010000000100000018000000140000002400000001000000
         paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
         - baseString
         - resultString
         - pause
@@ -12203,8 +12226,8 @@ MonoBehaviour:
         - audioSourceObj
         - targetProperty
         - everyFrame
-        paramDataPos: 0000000001000000000000000100000000000000000000000000000001000000010000000200000000000000000000000000000003000000
-        paramByteDataSize: 0000000000000000000000000000000000000000010000000000000000000000010000000100000000000000000000000000000001000000
+        paramDataPos: 000000000000000001000000000000000000000001000000000000000100000001000000010000000200000003000000020000000300000000000000000000000000000004000000
+        paramByteDataSize: 000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000010000000100000000000000000000000000000001000000
     - name: Talking about Pathway
       description: 
       colorIndex: 3
@@ -19800,6 +19823,9 @@ MonoBehaviour:
     - name: Reactive Menu
       isSystemEvent: 0
       isGlobal: 1
+    - name: Skip Dialog
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables:
@@ -19822,7 +19848,13 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 0
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Skip?
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       stringVariables:
       - useVariable: 1
         name: Tutorial Text
@@ -19843,7 +19875,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
