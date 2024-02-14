@@ -126,8 +126,8 @@ MonoBehaviour:
   target: {fileID: 0}
   wavepointIndex: 0
   distanceToTarget: 0
-  health: 3
-  damageDealt: 1
+  health: 1
+  damageDealt: 2
   spawner: {fileID: 0}
   dying: 0
   spriteRenderer: {fileID: 0}

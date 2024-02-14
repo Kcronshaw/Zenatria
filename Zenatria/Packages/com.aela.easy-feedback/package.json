@@ -1,0 +1,24 @@
+{
+  "name": "com.aela.easy-feedback",
+  "version": "3.1.0",
+  "displayName": "Easy Feedback Form",
+  "description": "Easy Feedback streamlines bug reporting and player feedback in your Unity game by bringing it directly to you!\n\nDetailed feedback and bug reports are submitted from in-game with just the tap of a button. With Trello, these reports are easily accessible and organized to your liking! Easy Feedback is very easy to setup and deploy, saving you development time, and getting your players' feedback to you as soon as possible.",
+  "unity": "2019.4",
+  "documentationUrl": "https://aesthetic.games/easy-feedback/docs/release/",
+  "changelogUrl": "https://aesthetic.games/easy-feedback/docs/release/changelog.html",
+  "licensesUrl": "https://unity.com/legal/as-terms",
+  "keywords": [
+    "bug",
+    "report",
+    "feedback",
+    "qa",
+    "screenshot",
+    "trello"
+  ],
+  "author": {
+    "name": "Aesthetician Labs",
+    "email": "help@aesthetic.games",
+    "url": "https://aesthetic.games"
+  },
+  "type": "tool"
+}
