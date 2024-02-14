@@ -7,15 +7,15 @@ public class EnemyDetector : MonoBehaviour
     public float range;
     //public GameObject parentTower;
 
-    private GameObject parentTower;
-    Fighter fighterScript;
+    [SerializeField] GameObject parentTower;
+    GenericTower genericTower;
     public GameObject enemy;
 
 
     void Start()
     {
         parentTower = transform.parent.gameObject;
-        fighterScript = parentTower.GetComponent<Fighter>();   
+        genericTower = parentTower.GetComponent<GenericTower>();   
     }
 
     // Update is called once per frame
@@ -23,10 +23,11 @@ public class EnemyDetector : MonoBehaviour
     {
 
 
-        if (fighterScript.targetedEnemy != null && Time.time >= fighterScript.nextAttack)
+        if (genericTower.targetedEnemy != null && Time.time >= genericTower.nextAttack)
         {
-            fighterScript.Attack();
-            fighterScript.nextAttack = Time.time + fighterScript.attackSpeed;
+            Debug.Log("maybe attacking of somethign");
+            genericTower.Attack();
+            genericTower.nextAttack = Time.time + genericTower.attackSpeed;
         }
 
         /*
@@ -64,12 +65,17 @@ public class EnemyDetector : MonoBehaviour
 
         foreach (Collider2D enemyCollider in enemies)
         {
+
+            
             enemy = enemyCollider.gameObject;
             
             Enemy enemyScript = enemy.GetComponent<Enemy>();
 
+            Debug.Log(enemyScript);
+
             if(enemyScript == null)
             {
+                Debug.Log("gaming??????");
                 continue;
             }
 
@@ -83,19 +89,20 @@ public class EnemyDetector : MonoBehaviour
 
             if (firstItem)
             {
-                fighterScript.targetedEnemy = enemy;
-                fighterScript.targetedEnemyScript = fighterScript.targetedEnemy.GetComponent<Enemy>();
+                Debug.Log("gaming?");
+                genericTower.targetedEnemy = enemy;
+                genericTower.targetedEnemyScript = genericTower.targetedEnemy.GetComponent<Enemy>();
                 firstItem = false;
                 continue;
             }
 
 
-            if (enemyScript.wavepointIndex >= fighterScript.targetedEnemyScript.wavepointIndex)
+            if (enemyScript.wavepointIndex >= genericTower.targetedEnemyScript.wavepointIndex)
             {
-                if (enemyScript.distanceToTarget <= fighterScript.targetedEnemyScript.distanceToTarget)
+                if (enemyScript.distanceToTarget <= genericTower.targetedEnemyScript.distanceToTarget)
                 {
-                    fighterScript.targetedEnemy = enemy;
-                    fighterScript.targetedEnemyScript = fighterScript.targetedEnemy.GetComponent<Enemy>();
+                    genericTower.targetedEnemy = enemy;
+                    genericTower.targetedEnemyScript = genericTower.targetedEnemy.GetComponent<Enemy>();
                 }
             }
         }

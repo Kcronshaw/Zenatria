@@ -7,8 +7,7 @@ public class Interactor : MonoBehaviour
 {
 
     [SerializeField]
-    private GameObject visualIndicator;
-    private GameObject upgradeMenu;
+    private GameObject visualIndicator, upgradeMenu;
 
 
 
@@ -16,6 +15,12 @@ public class Interactor : MonoBehaviour
     {
         visualIndicator.SetActive(true);
         upgradeMenu.SetActive(true);
+    }
+
+    public void closeMenu()
+    {
+        visualIndicator.SetActive(false);
+        upgradeMenu.SetActive(false);
     }
 
 

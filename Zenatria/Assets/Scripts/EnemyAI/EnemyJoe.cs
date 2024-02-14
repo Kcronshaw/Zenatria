@@ -110,6 +110,20 @@ public class EnemyJoe : MonoBehaviour
         set => _spriteRenderer = value;
     }
 
+    [SerializeField]
+    [FormerlySerializedAs("healthbar")]
+    protected Healthbar _healthbar;
+    public Healthbar healthbar
+    {
+        get => _healthbar;
+        set => _healthbar = value;
+    }
+
+
+
+
+
+
     protected Bridge bridgeOn = null;
 
 
@@ -204,7 +218,7 @@ public class EnemyJoe : MonoBehaviour
     public virtual void TakeDamage(int i)
     {
         health = health - i;
-
+        healthbar.ChangeHealth(health);
 
         if (health <= 0 && dying == false)
         {
