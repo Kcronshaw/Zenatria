@@ -33,6 +33,10 @@ public class Enemy : MonoBehaviour
     public Enemy parentSlimeScript;
 
 
+    Animator animator;
+    Rigidbody2D rb;
+
+
     public GameObject spawnerObject;
 
     void Start()
@@ -59,14 +63,19 @@ public class Enemy : MonoBehaviour
 
         spawnerObject = GameObject.FindGameObjectWithTag("Spawner");
         spawner = spawnerObject.GetComponent<Spawner>();
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
 
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
+        
+
         Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * speed * Time.deltaTime);
+        dir = dir.normalized;
+        transform.Translate(dir * speed * Time.deltaTime);
 
         distanceToTarget = Vector3.Distance(transform.position, target.position);
 
@@ -85,6 +94,27 @@ public class Enemy : MonoBehaviour
             target = Waypoints.points[wavepointIndex];
 
         }
+
+        Debug.Log(dir);
+
+        if (dir.y >= 0.8) //north
+        {
+            animator.SetInteger("NESW", 1);
+        }
+        else if (dir.x >= 0.8) //east
+        {
+            animator.SetInteger("NESW", 2);
+        }
+        else if (dir.y <= -0.8) //south
+        {
+            animator.SetInteger("NESW", 3);
+        }
+        else if (dir.x <= -0.8) //west
+        {
+            animator.SetInteger("NESW", 4);
+        }
+
+        
 
 
     }
