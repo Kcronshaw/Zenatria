@@ -49,17 +49,19 @@ public class SlimeJoe : EnemyJoe
         {
             GameObject babyslime = Instantiate(self.babySlime, tran);
             self.spawner.EnemiesAlive++;
-            BabySlime babieScripto = babyslime.GetComponent<BabySlime>();
-            babieScripto.target = self.target;
+            BabySlimeJoe babieScripto = babyslime.GetComponent<BabySlimeJoe>();
+            babieScripto.currentPath = self.currentPath;
             babieScripto.wavepointIndex = self.wavepointIndex;
             self.babySlime.transform.SetParent(null, true);
         }
 
     }   
 
+    /*
     private static void SlimeSplitJoe()
     {
 
     }
+    */
 
 }

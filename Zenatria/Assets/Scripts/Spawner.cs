@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-
+        // Debug.Log("Running spawner update");
         if (EnemiesAlive > 0)
         {
             return;
@@ -53,7 +54,7 @@ public class Spawner : MonoBehaviour
     void SpawnEnemy(GameObject enemy)
     {
         GameObject enemyUnit = Instantiate(enemy, transform, transform);
-        enemyUnit.GetComponent<Enemy>().spawner = this;
+        enemyUnit.GetComponent<EnemyJoe>().spawner = this;
     }
 
     public void EnemyKilled()

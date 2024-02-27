@@ -29,6 +29,7 @@ public class EnemyJoe : MonoBehaviour
         set { _speed = value; }
     }
 
+    /*
     [SerializeField]
     [FormerlySerializedAs("target")]
     protected Transform _target;
@@ -37,6 +38,7 @@ public class EnemyJoe : MonoBehaviour
         get => _target;
         set => _target = value;
     }
+    */
 
     [SerializeField]
     [FormerlySerializedAs("wavepointIndex")]
@@ -110,13 +112,18 @@ public class EnemyJoe : MonoBehaviour
         set => _spriteRenderer = value;
     }
 
-    protected Bridge bridgeOn = null;
+    protected PathSegment currentPath;
+    public PathSegment CurrentPath
+    {
+        get => currentPath;
+    }
 
 
     protected virtual void Start()
     {
-        target = Waypoints.points[0];
-        transform.position = target.position;
+        
+        transform.position = Waypoints.paths[0].Begin;
+        currentPath = Waypoints.paths[0];
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         spawnerObject = GameObject.FindGameObjectWithTag("Spawner");
@@ -135,38 +142,39 @@ public class EnemyJoe : MonoBehaviour
     // Update is called once per frame
     protected void FixedUpdate()
     {
-        if (target == null)
+        if (currentPath == null)
         {
-            Debug.LogError("Target is null.");
+            Debug.LogError("Path is null.");
             return;
         }
-        bool canMove = true;
-        if (bridgeOn != null)
+        
+        if (!currentPath.Passable(this))
         {
-            if (bridgeOn.Broken)
+            var altPath = Waypoints.FindAlternative(this, currentPath);
+            if (altPath != null)
             {
-                canMove = false;
+                transform.position = altPath.Begin;
+                currentPath = altPath;
             } else
             {
-                canMove = true;
+                transform.position = currentPath.Begin;
+                // do something to repair bridge
             }
-        }
-
-        if (!canMove)
-        {
             return;
         }
 
-        Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * speed * Time.deltaTime);
 
-        distanceToTarget = Vector3.Distance(transform.position, target.position);
+        Vector3 dir = currentPath.Direction(); // this is normalized
+        transform.Translate(dir * speed * Time.deltaTime);
 
-        if (distanceToTarget <= 0.1f)
+        distanceToTarget = Vector3.Distance(transform.position, currentPath.End);
+
+        if (distanceToTarget <= 0.1f) // when you reach the end of a given path
         {
-
-            if (wavepointIndex >= Waypoints.points.Length)
+            Debug.Log("End of Path reached for index " + wavepointIndex + ".");
+            if (wavepointIndex >= Waypoints.paths.Length - 1) // checks if we're at the last path // subtract 1 for each branched path
             {
+                Debug.Log("Ready to deal damage at end of final path, index " + wavepointIndex);
                 DealDamage();
                 if (spawner != null)
                 {
@@ -181,29 +189,24 @@ public class EnemyJoe : MonoBehaviour
                     Debug.LogError("Attempting to destroy a null object.");
                 }
                 return;
-            }
-
-            wavepointIndex++;
-            target = Waypoints.points[wavepointIndex];
-
-        } else
-        {
-            foreach (Bridge bridge in Waypoints.bridges)
+            } else
             {
-                if (bridge.atBegin(transform.position))
-                {
-                    if (bridge.Broken)
-                    {
+                
+                wavepointIndex++;
+                Debug.Log("Final path not reached, next segment will be " + wavepointIndex + ".");
 
-                    }
-                }
+
+                currentPath = Waypoints.paths[wavepointIndex];
             }
+
+            
+
         }
     }
 
     public virtual void TakeDamage(int i)
     {
-        health = health - i;
+        health -= i;
 
 
         if (health <= 0 && dying == false)

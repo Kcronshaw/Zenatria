@@ -21,7 +21,7 @@ namespace HutongGames.PlayMaker.Actions
         [Tooltip("Where to save the screenshot.")]
 	    public Destination destination;
 
-        [Tooltip("Path used with Custom Path Destination option.")]
+        [Tooltip("PathObject used with Custom PathObject Destination option.")]
 	    public FsmString customPath;
 
 		[RequiredField]
