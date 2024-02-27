@@ -33,6 +33,8 @@ MonoBehaviour:
     - AeLa.EasyFeedback
     - AeLa.EasyFeedback.Demo
     - AllIn1SpriteShaderAssembly
+    - AlmostEngine
+    - AlmostEngine.Shared
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
     - Highlighters

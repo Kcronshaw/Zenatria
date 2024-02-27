@@ -1554,6 +1554,8 @@ GameObject:
   - component: {fileID: 319900370}
   - component: {fileID: 319900372}
   - component: {fileID: 319900371}
+  - component: {fileID: 319900374}
+  - component: {fileID: 319900373}
   m_Layer: 0
   m_Name: Paths
   m_TagString: Untagged
@@ -2377,6 +2379,68 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!68 &319900373
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319900369}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.245
+  m_Points:
+  - {x: 6.4909096, y: 6.972886}
+  - {x: 6.5004883, y: 2.5321012}
+  - {x: 3.523326, y: 2.516896}
+  - {x: 3.4739892, y: 3.5057802}
+  - {x: -0.4798398, y: 3.5111723}
+  - {x: -0.54245555, y: 5.5138144}
+  - {x: -2.500155, y: 5.499123}
+  - {x: -2.5311813, y: 4.504491}
+  - {x: -6.486643, y: 4.4821835}
+  - {x: -6.465521, y: 2.4872775}
+  - {x: -4.5048714, y: 2.486629}
+  - {x: -4.508045, y: 0.04921174}
+  - {x: -4.454122, y: -0.5112474}
+  - {x: 3.4980037, y: -0.5159518}
+  - {x: 3.4916604, y: -3.4973004}
+  - {x: 5.4833922, y: -3.4506025}
+  - {x: 5.484662, y: 1.4591609}
+  - {x: -0.4703951, y: 1.5008332}
+  - {x: -0.5535426, y: -3.458179}
+  - {x: -3.4652748, y: -3.5164657}
+  - {x: -3.501999, y: -5.028166}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!50 &319900374
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319900369}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
 --- !u!1 &375157576
 GameObject:
   m_ObjectHideFlags: 0

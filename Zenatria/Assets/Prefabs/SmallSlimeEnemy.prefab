@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: Baby Slime
-  speed: 1
+  speed: 2
   target: {fileID: 0}
   wavepointIndex: 0
   distanceToTarget: 0

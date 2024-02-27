@@ -28,14 +28,16 @@ public class Spawner : MonoBehaviour
         {
             return;
         }
-
         //if (Input.GetKeyDown("space"))
         //{
             //StartCoroutine(SpawnWave());
         //}
 
     }
-
+    public void SpawnWaves()
+    {
+        StartCoroutine(SpawnWave());
+    }
 
 
     IEnumerator SpawnWave()

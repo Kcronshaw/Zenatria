@@ -1290,6 +1290,8 @@ GameObject:
   - component: {fileID: 492953993}
   - component: {fileID: 492953995}
   - component: {fileID: 492953994}
+  - component: {fileID: 492953997}
+  - component: {fileID: 492953996}
   m_Layer: 0
   m_Name: Paths
   m_TagString: Untagged
@@ -2155,6 +2157,70 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!68 &492953996
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492953992}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.234
+  m_Points:
+  - {x: -9.965623, y: -0.5013313}
+  - {x: -1.51294, y: -0.49478227}
+  - {x: -1.5057107, y: -2.5084026}
+  - {x: 1.4839431, y: -2.484984}
+  - {x: 1.4666839, y: 0.49407172}
+  - {x: -1.4983709, y: 0.50924784}
+  - {x: -1.5073528, y: 3.4929125}
+  - {x: 0.46309832, y: 3.4878464}
+  - {x: 0.51359046, y: 1.5005009}
+  - {x: 3.4702885, y: 1.5104454}
+  - {x: 3.5082462, y: 3.5095298}
+  - {x: 5.497134, y: 3.5031335}
+  - {x: 5.494679, y: 5.5151906}
+  - {x: 3.5079575, y: 5.501517}
+  - {x: 3.5102134, y: 4.5030785}
+  - {x: -5.405786, y: 4.570726}
+  - {x: -5.628874, y: -3.327435}
+  - {x: -1.6029081, y: -3.328933}
+  - {x: 2.4573023, y: -3.3304672}
+  - {x: 2.5383072, y: 0.4807428}
+  - {x: 6.499331, y: 0.4679094}
+  - {x: 6.5274677, y: -1.498795}
+  - {x: 10.035898, y: -1.4729419}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!50 &492953997
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492953992}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
 --- !u!1 &527865495
 GameObject:
   m_ObjectHideFlags: 0
