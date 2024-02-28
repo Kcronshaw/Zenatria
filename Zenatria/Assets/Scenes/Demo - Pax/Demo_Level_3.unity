@@ -1834,6 +1834,8 @@ GameObject:
   - component: {fileID: 319900370}
   - component: {fileID: 319900372}
   - component: {fileID: 319900371}
+  - component: {fileID: 319900374}
+  - component: {fileID: 319900373}
   m_Layer: 0
   m_Name: Paths
   m_TagString: Untagged
@@ -2837,6 +2839,74 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &319900373
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319900369}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
+--- !u!68 &319900374
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319900369}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.245
+  m_Points:
+  - {x: -9.977791, y: 0.51227474}
+  - {x: -0.5084202, y: 0.5187173}
+  - {x: -0.5470166, y: -1.473885}
+  - {x: -4.407821, y: -1.483227}
+  - {x: -4.466403, y: -2.5143847}
+  - {x: -3.5299697, y: -2.4863448}
+  - {x: -3.5424337, y: 4.4966545}
+  - {x: -5.480562, y: 4.5203896}
+  - {x: -5.497544, y: 1.5344689}
+  - {x: -1.6527185, y: 1.5662756}
+  - {x: -1.4640613, y: 5.440048}
+  - {x: -0.5416529, y: 5.45283}
+  - {x: -0.38206875, y: 2.5123641}
+  - {x: 4.504556, y: 2.4489794}
+  - {x: 4.4658303, y: 1.50588}
+  - {x: 0.5543003, y: 1.4649289}
+  - {x: 0.49434102, y: 0.15402031}
+  - {x: 0.5336387, y: -2.48814}
+  - {x: 2.460903, y: -2.4659073}
+  - {x: 2.568942, y: 0.46248877}
+  - {x: 5.484461, y: 0.4782462}
+  - {x: 5.490119, y: 3.4658191}
+  - {x: 2.5104733, y: 3.4869735}
+  - {x: 2.5401382, y: 5.482664}
+  - {x: 6.9376125, y: 5.5003943}
+  - {x: 8.039572, y: 4.498193}
+  - {x: 9.96907, y: 4.4524918}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &375157576
 GameObject:
   m_ObjectHideFlags: 0

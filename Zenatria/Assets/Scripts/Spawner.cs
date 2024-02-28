@@ -56,7 +56,10 @@ public class Spawner : MonoBehaviour
         
 
     }
-
+    public void SpawnWaves()
+    {
+        StartCoroutine(SpawnWave());
+    }
 
 
     IEnumerator SpawnWave()

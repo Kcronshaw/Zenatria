@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Demo - Pax/Demo_Level_Tavern.unity
     guid: e79238279ee41474cb6b3adeb899af2b
+  - enabled: 1
+    path: Assets/Scenes/Demo - Pax/Demo_FeedbackForm.unity
+    guid: da61137d73e564e60961f9c45cd50dd2
   m_configObjects: {}

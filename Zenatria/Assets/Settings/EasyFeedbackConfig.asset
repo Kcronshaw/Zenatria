@@ -17,10 +17,12 @@ MonoBehaviour:
   Board:
     Id: 65c3af37806585b0233061e5
     ListNames:
+    - Main Board
     - Feedback (EF)
     - Bugs (EF)
     - Resolved
     ListIds:
+    - 65c3d97b6bd8db8aadcefd96
     - 65c3af37806585b0233061e6
     - 65c3af37806585b0233061e7
     - 65c3af37806585b0233061e8
@@ -35,17 +37,17 @@ MonoBehaviour:
       idBoard: 65c3af37806585b0233061e5
       name: Low Priority
       color: green
-      uses: 0
-      order: 0
-    - id: 65c3af37806585b023306200
-      idBoard: 65c3af37806585b0233061e5
-      name: High Priority
-      color: red
-      uses: 0
+      uses: 1
       order: 0
     - id: 65c3af37806585b0233061fd
       idBoard: 65c3af37806585b0233061e5
       name: Medium Priority
       color: yellow
+      uses: 1
+      order: 0
+    - id: 65c3af37806585b023306200
+      idBoard: 65c3af37806585b0233061e5
+      name: High Priority
+      color: red
       uses: 0
       order: 0
