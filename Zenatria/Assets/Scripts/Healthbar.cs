@@ -7,7 +7,7 @@ public class Healthbar : MonoBehaviour
 {
     [SerializeField] Image healthbar;
     [SerializeField] int health, healthMax;
-    [SerializeField] Enemy enemy;
+    [SerializeField] EnemyJoe enemy;
 
 
     private void Start()

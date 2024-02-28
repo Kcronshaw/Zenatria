@@ -13,13 +13,11 @@ public class SPEEEEDBOOST : MonoBehaviour
         if (timescale == 1.0f)
         {
             timescale = 2.0f;
-            Debug.Log("running1");
 
         }
         else if (timescale == 2.0f || timescale == 0.0f)
         {
             timescale = 1.0f;
-            Debug.Log("running2");
         }
 
 

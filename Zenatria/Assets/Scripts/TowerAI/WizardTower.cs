@@ -20,18 +20,19 @@ public class WizardTower : GenericTower
 
     public void FixedUpdate()
     {
-        if (nextAttack <= Time.time)
+        if (nextAttack <= Time.time && targetedEnemy != null)
         {
             nextAttack = Time.time + attackSpeed;
+            Debug.Log("ShadowWizardMoneyGang");
             Attack();
         }
     }
 
 
-    public void Attack()
+    override public void Attack()
     {
         
-        GameObject fireball = Instantiate(projectile);
+        GameObject fireball = Instantiate(projectile, this.transform);
         Rigidbody2D rbTemp = fireball.GetComponent<Rigidbody2D>();
         ProjectileScript projScript = fireball.GetComponent<ProjectileScript>();
         

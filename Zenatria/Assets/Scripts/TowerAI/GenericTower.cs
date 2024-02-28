@@ -116,18 +116,19 @@ public class GenericTower : MonoBehaviour
 
 
 
-    [SerializeField] protected float range;
+    [SerializeField] protected float miniRange;
     [SerializeField] protected GameObject enemy;
 
-    public void Attack()
+    virtual public void Attack()
     {
+
         targetedEnemyScript.TakeDamage(attackDamage);
 
     }
 
 
 
-    public void Upgrade()
+    virtual public void Upgrade()
     {
 
         currentLevel++;
@@ -139,42 +140,34 @@ public class GenericTower : MonoBehaviour
     {
 
 
-        if (targetedEnemy != null && Time.time >= nextAttack)
-        {
-            Debug.Log("maybe attacking of somethign");
-            Attack();
-            nextAttack = Time.time + attackSpeed;
-        }
-
         if (targetedEnemy == null)
         {
+            Debug.Log("Detecting");
             DetectTarget();
         }
+
+
+
+
+        if (Vector2.Distance(targetedEnemy.transform.position, transform.position) >= attackRange)
+        {
+            targetedEnemy = null;
+        }
+
+
+        
+
+
     }
 
 
-    public void FixedUpdate()
-    {
-        var step = miniSpeed * Time.deltaTime;
-
-        distanceToTarget = Vector3.Distance(miniTower.transform.position, targetedEnemy.transform.position);
-        if (distanceToTarget >= attackRange)
-        {
-            Debug.Log("blud is runnin");
-            miniTower.transform.position = Vector3.MoveTowards(miniTower.transform.position, targetedEnemy.transform.position, step);
-        }
-        else
-        {
-            Attack();
-        }
-    }
 
 
 
     private void DetectTarget()
     {
 
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(this.transform.position, range);
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(this.transform.position, attackRange);
 
         bool firstItem = true;
 
@@ -189,18 +182,16 @@ public class GenericTower : MonoBehaviour
 
             EnemyJoe enemyScript = enemy.GetComponent<EnemyJoe>();
 
-            Debug.Log(enemyScript);
 
             if (enemyScript == null)
             {
-                Debug.Log("gaming??????");
                 continue;
             }
 
 
-            float distance = Vector3.Distance(enemy.transform.position, this.gameObject.transform.position);
+            float distance = Vector2.Distance(enemy.transform.position, this.gameObject.transform.position);
 
-            if (distance >= range)
+            if (distance >= attackRange)
             {
                 Debug.Log(distance);
                 continue;
@@ -229,7 +220,6 @@ public class GenericTower : MonoBehaviour
             //Debug.Log("wegetthere");
         }
 
-        //Debug.Log("done " + targetedEnemy.transform.position.x);
     }
 
 }

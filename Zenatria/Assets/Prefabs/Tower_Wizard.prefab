@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8705421688844338352}
   - component: {fileID: 7619184985012769892}
-  - component: {fileID: 3104053064186705862}
   - component: {fileID: 5854569253376932800}
   - component: {fileID: 2390439232041544117}
+  - component: {fileID: 1061984285560412808}
   m_Layer: 0
   m_Name: Tower_Wizard
   m_TagString: Unplaceable
@@ -87,25 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3104053064186705862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480919435630095399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49070299a22de56459e9f96bf189447a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetedEnemy: {fileID: 0}
-  attackDamage: 0
-  nextAttack: 0
-  attackSpeed: 0
-  range: 0
-  attackAnimation: {fileID: 0}
-  attackSwing: {fileID: 0}
 --- !u!50 &5854569253376932800
 Rigidbody2D:
   serializedVersion: 4
@@ -143,3 +124,29 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &1061984285560412808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480919435630095399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca42808461f52b4ab85a31e43e60eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetedEnemy: {fileID: 0}
+  _targetedEnemyScript: {fileID: 0}
+  _attackDamage: 3
+  _nextAttack: 0
+  _attackSpeed: 5
+  _rangeVisual: {fileID: 0}
+  _currentLevel: 1
+  _attackRange: 5
+  _distanceToTarget: 0.2
+  _miniSpeed: 2
+  _miniTower: {fileID: 0}
+  miniRange: 0
+  enemy: {fileID: 0}
+  _projectile: {fileID: 2482713742859412601, guid: e6527468234635849ae71540a7654500, type: 3}
