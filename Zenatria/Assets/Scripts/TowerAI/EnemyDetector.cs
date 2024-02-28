@@ -80,16 +80,17 @@ public class EnemyDetector : MonoBehaviour
             }
 
 
-            float distance = Vector3.Distance(enemy.transform.position, this.transform.position);
+            float distance = Vector3.Distance(enemy.transform.position, this.gameObject.transform.position);
 
             if (distance >= range)
             {
+                Debug.Log(distance);
                 continue;
             }
 
             if (firstItem)
             {
-                Debug.Log("gaming?");
+                
                 genericTower.targetedEnemy = enemy;
                 genericTower.targetedEnemyScript = genericTower.targetedEnemy.GetComponent<Enemy>();
                 firstItem = false;
@@ -105,6 +106,10 @@ public class EnemyDetector : MonoBehaviour
                     genericTower.targetedEnemyScript = genericTower.targetedEnemy.GetComponent<Enemy>();
                 }
             }
+
+
+
+            //Debug.Log("wegetthere");
         }
 
         //Debug.Log("done " + targetedEnemy.transform.position.x);

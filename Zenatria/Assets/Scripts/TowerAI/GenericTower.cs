@@ -75,6 +75,46 @@ public class GenericTower : MonoBehaviour
     }
 
 
+
+    [SerializeField]
+    [FormerlySerializedAs("attackRange")]
+    protected float _attackRange = 0;
+    public float attackRange
+    {
+        get => _attackRange;
+        set => _attackRange = value;
+    }
+
+    [SerializeField]
+    [FormerlySerializedAs("distanceToTarget")]
+    protected float _distanceToTarget = 0.2f;
+    public float distanceToTarget
+    {
+        get => _distanceToTarget;
+        set => _distanceToTarget = value;
+    }
+
+    [SerializeField]
+    [FormerlySerializedAs("miniSpeed")]
+    protected float _miniSpeed = 2;
+    public float miniSpeed
+    {
+        get => _miniSpeed;
+        set => _miniSpeed = value;
+    }
+
+    [SerializeField]
+    [FormerlySerializedAs("miniTower")]
+    protected GameObject _miniTower = null;
+    public GameObject miniTower
+    {
+        get => _miniTower;
+        set => _miniTower = value;
+    }
+
+
+
+
     public void Attack()
     {
         targetedEnemyScript.TakeDamage(attackDamage);
@@ -88,6 +128,23 @@ public class GenericTower : MonoBehaviour
 
         currentLevel++;
 
+    }
+
+
+    public void FixedUpdate()
+    {
+        var step = miniSpeed * Time.deltaTime;
+
+        distanceToTarget = Vector3.Distance(miniTower.transform.position, targetedEnemy.transform.position);
+        if (distanceToTarget >= attackRange)
+        {
+            Debug.Log("blud is runnin");
+            miniTower.transform.position = Vector3.MoveTowards(miniTower.transform.position, targetedEnemy.transform.position, step);
+        }
+        else
+        {
+            Attack();
+        }
     }
 
 }

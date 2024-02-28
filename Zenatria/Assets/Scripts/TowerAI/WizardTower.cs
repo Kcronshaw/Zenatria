@@ -1,0 +1,45 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Serialization;
+
+public class WizardTower : GenericTower
+{
+    [SerializeField]
+    [FormerlySerializedAs("targetedEnemy")]
+    protected GameObject _projectile = null;
+    public GameObject projectile
+    {
+        get => _projectile;
+        set => _projectile = value;
+    }
+
+
+
+
+
+    public void FixedUpdate()
+    {
+        if (nextAttack <= Time.time)
+        {
+            nextAttack = Time.time + attackSpeed;
+            Attack();
+        }
+    }
+
+
+    public void Attack()
+    {
+        
+        GameObject fireball = Instantiate(projectile);
+        Rigidbody2D rbTemp = fireball.GetComponent<Rigidbody2D>();
+        ProjectileScript projScript = fireball.GetComponent<ProjectileScript>();
+        
+
+
+        var dir = targetedEnemy.transform.position - fireball.transform.position;
+        rbTemp.velocity = projScript.projectileSpeed * dir.normalized;
+
+
+    }
+}

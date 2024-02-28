@@ -150,7 +150,14 @@ public class Enemy : MonoBehaviour
     void Start()
     {
 
-        if(enemyType == "Baby Slime")
+
+        target = Waypoints.points[0];
+        Debug.Log("WHYYYYYYYYYYYYYYYY");
+        transform.position = target.position;
+        spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
+
+
+        if (enemyType == "Baby Slime")
         {
             parentSlime = this.gameObject.transform.parent.gameObject;
             transform.position = parentSlime.transform.position;
@@ -161,12 +168,7 @@ public class Enemy : MonoBehaviour
             StartCoroutine(ParentDeletor()); 
             //I genuinely dont know why i need to wait here but i fucking do deal with it
         }
-        else
-        {
-            target = Waypoints.points[0];
-            transform.position = target.position;
-            spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
-        }
+        
 
 
         spawnerObject = GameObject.FindGameObjectWithTag("Spawner");

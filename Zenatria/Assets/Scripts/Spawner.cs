@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Serialization;
+using UnityEditor.Callbacks;
 
 public class Spawner : MonoBehaviour
 {
@@ -12,27 +13,45 @@ public class Spawner : MonoBehaviour
     [SerializeField] Text enemiesAliveText;
 
     [SerializeField] int waveIndex;
+    [SerializeField] bool tutorial;
+
+    private bool runBefore = false;
 
 
 
     [System.Serializable]
-    public struct BigWave { public List<Wave> miniWave; }
+    public struct BigWave 
+    {
+        public List<Wave> miniWave;
+        public int cashGen;
+    }
+
+
     [SerializeField]
     public BigWave[] waves;
 
     private void Update()
     {
-        enemiesAliveText.text = EnemiesAlive.ToString();
+        //enemiesAliveText.text = EnemiesAlive.ToString();
 
         if (EnemiesAlive > 0)
         {
             return;
         }
 
-        //if (Input.GetKeyDown("space"))
-        //{
-            //StartCoroutine(SpawnWave());
-        //}
+        if (Input.GetKeyDown("space"))
+        {
+            StartCoroutine(SpawnWave());
+        }
+
+
+        if (EnemiesAlive <= 0 && runBefore == false)
+        {
+            runBefore = true;
+            TowerBuilder.instance.money += waves[waveIndex].cashGen;
+        }
+
+        
 
     }
 
@@ -40,6 +59,8 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
+
+        runBefore = false;
         
         Debug.Log(waveIndex);
 
@@ -64,7 +85,7 @@ public class Spawner : MonoBehaviour
 
     void SpawnEnemy(GameObject enemy)
     {
-        GameObject enemyUnit = Instantiate(enemy, transform, transform);
+        GameObject enemyUnit = Instantiate(enemy, this.gameObject.transform, this.gameObject.transform);
         enemyUnit.GetComponent<Enemy>().spawner = this;
     }
 
