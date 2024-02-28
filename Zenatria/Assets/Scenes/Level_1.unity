@@ -7827,6 +7827,33 @@ Transform:
   m_Father: {fileID: 1415968311}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1666937302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4235755898866716828, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
+  m_PrefabInstance: {fileID: 2086210848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1666937310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666937302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812c870add94ab740b768fce1efac7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyType: Goblin
+  _speed: 1
+  _wavepointIndex: 0
+  _distanceToTarget: 0
+  _health: 3
+  _damageDealt: 1
+  _spawnerObject: {fileID: 0}
+  _spawner: {fileID: 0}
+  _dying: 0
+  _spriteRenderer: {fileID: 0}
 --- !u!1 &1669030437
 GameObject:
   m_ObjectHideFlags: 0
@@ -10660,7 +10687,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7110360717893439399, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
 --- !u!1 &2129178345
 GameObject:

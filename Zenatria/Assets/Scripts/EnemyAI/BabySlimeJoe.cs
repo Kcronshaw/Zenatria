@@ -16,8 +16,8 @@ public class BabySlimeJoe : SlimeJoe
 
     [SerializeField]
     [FormerlySerializedAs("parentSlimeScript")]
-    private Enemy _parentSlimeScript;
-    public Enemy parentSlimeScript
+    private EnemyJoe _parentSlimeScript;
+    public EnemyJoe parentSlimeScript
     {
         get => _parentSlimeScript;
         set => _parentSlimeScript = value;
@@ -27,9 +27,9 @@ public class BabySlimeJoe : SlimeJoe
     {
         parentSlime = this.gameObject.transform.parent.gameObject;
         transform.position = parentSlime.transform.position;
-        parentSlimeScript = parentSlime.GetComponent<Enemy>(); // Depending on what the parent slime's script name ends up being, this needs to change
-        target = parentSlimeScript.target;
-        Debug.Log(parentSlimeScript.target);
+        parentSlimeScript = parentSlime.GetComponent<EnemyJoe>(); // Depending on what the parent slime's script name ends up being, this needs to change
+        currentPath = parentSlimeScript.CurrentPath;
+        Debug.Log(parentSlimeScript.CurrentPath);
         wavepointIndex = parentSlimeScript.wavepointIndex;
         StartCoroutine(ParentDeletor());
         //I genuinely dont know why i need to wait here but i fucking do deal with it
@@ -42,7 +42,7 @@ public class BabySlimeJoe : SlimeJoe
 
     public override void TakeDamage(int i)
     {
-        health = health - i;
+        health -= i;
 
 
         if (health <= 0 && dying == false)

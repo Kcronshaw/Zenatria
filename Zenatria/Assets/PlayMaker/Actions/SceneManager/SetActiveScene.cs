@@ -27,7 +27,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The index of the scene to activate.")]
 		public FsmInt sceneAtIndex;
 
-		[Tooltip("The scene Path.")]
+		[Tooltip("The scene PathObject.")]
 		public FsmString sceneByPath;
 
 		[Tooltip("The GameObject scene to activate.")]

@@ -10,6 +10,7 @@ TagManager:
   - Turn Right
   - Turn Left
   - Tower
+  - Bridge
   layers:
   - Default
   - TransparentFX

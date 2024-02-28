@@ -45,7 +45,6 @@ public class EnemyDetector : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
-            //Debug.Log("Detected");
             DetectTarget();
         }
     }
@@ -56,7 +55,6 @@ public class EnemyDetector : MonoBehaviour
     {
 
         Collider2D[] enemies = Physics2D.OverlapCircleAll(this.transform.position, range);
-        Debug.Log(enemies.Length);
 
         bool firstItem = true;
 
@@ -69,7 +67,7 @@ public class EnemyDetector : MonoBehaviour
             
             enemy = enemyCollider.gameObject;
             
-            Enemy enemyScript = enemy.GetComponent<Enemy>();
+            EnemyJoe enemyScript = enemy.GetComponent<EnemyJoe>();
 
             Debug.Log(enemyScript);
 
@@ -90,9 +88,8 @@ public class EnemyDetector : MonoBehaviour
 
             if (firstItem)
             {
-                
-                genericTower.targetedEnemy = enemy;
-                genericTower.targetedEnemyScript = genericTower.targetedEnemy.GetComponent<Enemy>();
+                fighterScript.targetedEnemy = enemy;
+                fighterScript.targetedEnemyScript = fighterScript.targetedEnemy.GetComponent<EnemyJoe>();
                 firstItem = false;
                 continue;
             }
@@ -102,8 +99,8 @@ public class EnemyDetector : MonoBehaviour
             {
                 if (enemyScript.distanceToTarget <= genericTower.targetedEnemyScript.distanceToTarget)
                 {
-                    genericTower.targetedEnemy = enemy;
-                    genericTower.targetedEnemyScript = genericTower.targetedEnemy.GetComponent<Enemy>();
+                    fighterScript.targetedEnemy = enemy;
+                    fighterScript.targetedEnemyScript = fighterScript.targetedEnemy.GetComponent<EnemyJoe>();
                 }
             }
 

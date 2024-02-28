@@ -885,10 +885,10 @@ GameObject:
   - component: {fileID: 4235755898866716825}
   - component: {fileID: 4235755898866716826}
   - component: {fileID: 4235755898866716824}
-  - component: {fileID: 7110360717893439399}
   - component: {fileID: 7748879992926505362}
   - component: {fileID: 3301920148910336377}
   - component: {fileID: 7737787506330993339}
+  - component: {fileID: 5243103065424175519}
   m_Layer: 6
   m_Name: Goblin_Thief
   m_TagString: Enemy
@@ -985,33 +985,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7110360717893439399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4235755898866716828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyType: Goblin
-  speed: 1
-  target: {fileID: 0}
-  wavepointIndex: 0
-  distanceToTarget: 0
-  health: 3
-  damageDealt: 1
-  spawner: {fileID: 0}
-  dying: 0
-  spriteRenderer: {fileID: 0}
-  babySlime: {fileID: 0}
-  numberOfBabies: 0
-  parentSlime: {fileID: 0}
-  parentSlimeScript: {fileID: 0}
-  spawnerObject: {fileID: 0}
 --- !u!61 &7748879992926505362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1072,3 +1045,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetFSMs: []
+--- !u!114 &5243103065424175519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235755898866716828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812c870add94ab740b768fce1efac7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyType: Goblin
+  _speed: 1
+  _wavepointIndex: 0
+  _distanceToTarget: 0
+  _health: 3
+  _damageDealt: 1
+  _spawnerObject: {fileID: 0}
+  _spawner: {fileID: 0}
+  _dying: 0
+  _spriteRenderer: {fileID: 0}

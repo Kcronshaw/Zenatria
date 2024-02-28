@@ -6,7 +6,7 @@ public class Fighter : MonoBehaviour
 {
 
     public GameObject targetedEnemy = null;
-    public Enemy targetedEnemyScript = null;
+    public EnemyJoe targetedEnemyScript = null;
 
     public int attackDamage;
     public float nextAttack = 0;
