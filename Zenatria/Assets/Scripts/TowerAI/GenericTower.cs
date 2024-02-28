@@ -20,8 +20,8 @@ public class GenericTower : MonoBehaviour
 
     [SerializeField]
     [FormerlySerializedAs("targetedEnemyScript")]
-    protected Enemy _targetedEnemyScript = null;
-    public Enemy targetedEnemyScript
+    protected EnemyJoe _targetedEnemyScript = null;
+    public EnemyJoe targetedEnemyScript
     {
         get => _targetedEnemyScript;
         set => _targetedEnemyScript = value;
@@ -115,6 +115,10 @@ public class GenericTower : MonoBehaviour
 
 
 
+
+    [SerializeField] protected float range;
+    [SerializeField] protected GameObject enemy;
+
     public void Attack()
     {
         targetedEnemyScript.TakeDamage(attackDamage);
@@ -128,6 +132,24 @@ public class GenericTower : MonoBehaviour
 
         currentLevel++;
 
+    }
+
+
+    private void Update()
+    {
+
+
+        if (targetedEnemy != null && Time.time >= nextAttack)
+        {
+            Debug.Log("maybe attacking of somethign");
+            Attack();
+            nextAttack = Time.time + attackSpeed;
+        }
+
+        if (targetedEnemy == null)
+        {
+            DetectTarget();
+        }
     }
 
 
@@ -145,6 +167,69 @@ public class GenericTower : MonoBehaviour
         {
             Attack();
         }
+    }
+
+
+
+    private void DetectTarget()
+    {
+
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(this.transform.position, range);
+
+        bool firstItem = true;
+
+
+
+
+        foreach (Collider2D enemyCollider in enemies)
+        {
+
+
+            enemy = enemyCollider.gameObject;
+
+            EnemyJoe enemyScript = enemy.GetComponent<EnemyJoe>();
+
+            Debug.Log(enemyScript);
+
+            if (enemyScript == null)
+            {
+                Debug.Log("gaming??????");
+                continue;
+            }
+
+
+            float distance = Vector3.Distance(enemy.transform.position, this.gameObject.transform.position);
+
+            if (distance >= range)
+            {
+                Debug.Log(distance);
+                continue;
+            }
+
+            if (firstItem)
+            {
+                targetedEnemy = enemy;
+                targetedEnemyScript = targetedEnemy.GetComponent<EnemyJoe>();
+                firstItem = false;
+                continue;
+            }
+
+
+            if (enemyScript.wavepointIndex >= targetedEnemyScript.wavepointIndex)
+            {
+                if (enemyScript.distanceToTarget <= targetedEnemyScript.distanceToTarget)
+                {
+                    targetedEnemy = enemy;
+                    targetedEnemyScript = targetedEnemy.GetComponent<EnemyJoe>();
+                }
+            }
+
+
+
+            //Debug.Log("wegetthere");
+        }
+
+        //Debug.Log("done " + targetedEnemy.transform.position.x);
     }
 
 }
