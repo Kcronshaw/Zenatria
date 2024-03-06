@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Tutorial-Implemented.unity
-    guid: 6dec7214d642340388cd3ddd6b75188e
+    path: Assets/Scenes/Demo - Pax/Demo_MainMenu.unity
+    guid: ce06d09ae68dd43bc9e69a1820e535d9
+  - enabled: 1
+    path: Assets/Scenes/Demo - Pax/Demo_LevelSelect.unity
+    guid: 61926b921bb62fe4ebab1caa1539db37
+  - enabled: 1
+    path: Assets/Scenes/Demo - Pax/Demo_Tutorial-Implemented.unity
+    guid: 499b3fbcd4d5e42b687bfd69d22403d5
+  - enabled: 1
+    path: Assets/Scenes/Demo - Pax/Demo_Level_1.unity
+    guid: d9ea64753d9044dad8fc1a4612c78d4b
+  - enabled: 1
+    path: Assets/Scenes/Demo - Pax/Demo_Level_2.unity
+    guid: f5cd7f35cfcc04de8bd54117bcb6f475
+  - enabled: 1
+    path: Assets/Scenes/Demo - Pax/Demo_Level_3.unity
+    guid: 221d7abdcf8fb40a48883b2a981efeca
+  - enabled: 1
+    path: Assets/Scenes/Demo - Pax/Demo_Level_Tavern.unity
+    guid: e79238279ee41474cb6b3adeb899af2b
+  - enabled: 1
+    path: Assets/Scenes/Demo - Pax/Demo_FeedbackForm.unity
+    guid: da61137d73e564e60961f9c45cd50dd2
   m_configObjects: {}

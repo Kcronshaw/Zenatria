@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6000
-  m_Sprite: {fileID: -468045116, guid: 08ed5835df2cb4ee7bfeecee391b2de0, type: 3}
+  m_Sprite: {fileID: 1204812758, guid: 32806186eade44bd1b439bbcba3d5ae2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1690532299642731021}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6b90ca8dd9cac44e09b17d4d7115bcdb, type: 2}
+  m_Controller: {fileID: 9100000, guid: d83b21d5eb7544c4296b7ddf629998e9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -122,12 +122,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: Baby Slime
-  speed: 1
+  speed: 2
   target: {fileID: 0}
   wavepointIndex: 0
   distanceToTarget: 0
   health: 1
-  damageDealt: 1
+  damageDealt: 2
   spawner: {fileID: 0}
   dying: 0
   spriteRenderer: {fileID: 0}
@@ -153,7 +153,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.28, y: 0.21}
+    oldSize: {x: 0.28, y: 0.25}
     newSize: {x: 0.28, y: 0.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

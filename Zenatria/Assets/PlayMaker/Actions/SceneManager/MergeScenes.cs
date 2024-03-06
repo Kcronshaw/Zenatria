@@ -23,7 +23,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The source scene Name.")]
 		public FsmString sourceByName;
 
-		[Tooltip("The source scene Path.")]
+		[Tooltip("The source scene PathObject.")]
 		public FsmString sourceByPath;
 
 		[Tooltip("The source scene from GameObject")]
@@ -39,7 +39,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The destination scene Name.")]
 		public FsmString destinationByName;
 
-		[Tooltip("The destination scene Path.")]
+		[Tooltip("The destination scene PathObject.")]
 		public FsmString destinationByPath;
 
 		[Tooltip("The destination scene from GameObject")]

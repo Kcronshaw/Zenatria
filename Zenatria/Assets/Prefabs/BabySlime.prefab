@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2346146194362604898}
   - component: {fileID: 3349432333716551779}
   - component: {fileID: 8920329899068397534}
-  - component: {fileID: 4591561208177392299}
+  - component: {fileID: -4143508064577573905}
+  - component: {fileID: -4534944536208492583}
   m_Layer: 6
   m_Name: BabySlime
   m_TagString: Enemy
@@ -134,7 +135,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &4591561208177392299
+--- !u!114 &-4143508064577573905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,20 +144,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 3573834380232408566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 812c870add94ab740b768fce1efac7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: Baby Slime
-  speed: 1
-  target: {fileID: 0}
-  wavepointIndex: 0
-  distanceToTarget: 0
-  health: 1
-  damageDealt: 1
-  spawner: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  babySlime: {fileID: 0}
-  numberOfBabies: 0
-  parentSlime: {fileID: 0}
-  parentSlimeScript: {fileID: 0}
-  spawnerObject: {fileID: 0}
+  _enemyType: Baby Slime
+  _speed: 1
+  _target: {fileID: 0}
+  _wavepointIndex: 0
+  _distanceToTarget: 0
+  _health: 3
+  _damageDealt: 1
+  _spawner: {fileID: 0}
+  _dying: 0
+  _spriteRenderer: {fileID: 0}
+  _spawnerObject: {fileID: 0}
+--- !u!114 &-4534944536208492583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3573834380232408566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce1a1447607db54bb90c7bc74e4b819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyType: Baby Slime
+  _speed: 1
+  _target: {fileID: 0}
+  _wavepointIndex: 0
+  _distanceToTarget: 0
+  _health: 3
+  _damageDealt: 1
+  _spawner: {fileID: 0}
+  _dying: 0
+  _spriteRenderer: {fileID: 0}
+  _spawnerObject: {fileID: 0}
+  _babySlime: {fileID: 0}
+  _numberOfBabies: 0
+  _parentSlime: {fileID: 0}
+  _parentSlimeScript: {fileID: 0}

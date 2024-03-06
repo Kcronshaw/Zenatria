@@ -51,7 +51,7 @@ namespace HutongGames.PlayMaker.Actions
         [Tooltip("Set a delayed startup for the tween")]
         public FsmFloat startDelay;
 
-        [ActionSection("Set Path Options")]
+        [ActionSection("Set PathObject Options")]
 
         [UIHint(UIHint.FsmBool)]
         [Tooltip("If TRUE the path will be automatically closed")]
@@ -198,7 +198,7 @@ namespace HutongGames.PlayMaker.Actions
 
             if (go == null)
             {
-                if (debugThis.Value) State.Debug("ERROR - DOTween Transform Local Path - The gameObject is null");
+                if (debugThis.Value) State.Debug("ERROR - DOTween Transform Local PathObject - The gameObject is null");
                 return;
             }
 
@@ -206,7 +206,7 @@ namespace HutongGames.PlayMaker.Actions
 
             if (trn == null)
             {
-                if (debugThis.Value) State.Debug("ERROR - DOTween Transform Local Path - The GameObject [" + go.name + "] does not have a Transform Component");
+                if (debugThis.Value) State.Debug("ERROR - DOTween Transform Local PathObject - The GameObject [" + go.name + "] does not have a Transform Component");
                 return;
             }
 
@@ -258,7 +258,7 @@ namespace HutongGames.PlayMaker.Actions
                     tween.OnComplete(Finish);
             }
             tween.Play();
-            if (debugThis.Value) State.Debug("DOTween Transform Path");
+            if (debugThis.Value) State.Debug("DOTween Transform PathObject");
             if (finishImmediately.Value) Finish();
         }
     }

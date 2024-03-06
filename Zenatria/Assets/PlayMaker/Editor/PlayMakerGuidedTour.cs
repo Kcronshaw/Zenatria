@@ -249,7 +249,7 @@ namespace HutongGames.PlayMakerEditor
                 "- Edit an FSM\'s description and help link.\n", 
                 "Window", GetUrl(WikiPages.FsmBrowser));
             AddTopic(root, "Settings Menu", "Settings for this window.",
-                "<b>Show Full FSM Path</b>\n" +
+                "<b>Show Full FSM PathObject</b>\n" +
                 "Show the GameObject and full path to the FSM.\n\n" +
                 "<b>Show Disabled FSMs</b>\n" +
                 "It can be useful at runtime to filter out disabled FSMs.\n\n" +

@@ -24,7 +24,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The scene Name.")]
 		public FsmString sceneByName;
 
-		[Tooltip("The scene Path.")]
+		[Tooltip("The scene PathObject.")]
 		public FsmString sceneByPath;
 
 		[Tooltip("The Scene of GameObject")]

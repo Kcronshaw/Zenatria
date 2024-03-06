@@ -10,6 +10,7 @@ TagManager:
   - Turn Right
   - Turn Left
   - Tower
+  - Bridge
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - Water
   - UI
   - Enemy
+  - Background
   - 
-  - 
-  - 
+  - UI Particle Effects
   - 
   - 
   - 
@@ -44,6 +45,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2399987411
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Forground
+    uniqueID: 3084996431
     locked: 0

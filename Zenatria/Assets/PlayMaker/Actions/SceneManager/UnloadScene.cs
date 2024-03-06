@@ -32,7 +32,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The index of the scene to unload.")]
 		public FsmInt sceneAtIndex;
 
-		[Tooltip("The scene Path.")]
+		[Tooltip("The scene PathObject.")]
 		public FsmString sceneByPath;
 
 		[Tooltip("The GameObject unload scene of")]

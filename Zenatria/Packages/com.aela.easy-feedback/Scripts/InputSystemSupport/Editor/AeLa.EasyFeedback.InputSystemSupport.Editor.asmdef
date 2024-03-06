@@ -1,0 +1,21 @@
+{
+    "name": "AeLa.EasyFeedback.InputSystemSupport.Editor",
+    "references": [
+        "GUID:c6d34cdfafa284366abda06ebfa687ad",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:afafb5b96e2dc4556a92235f753b15d9"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "ENABLE_INPUT_SYSTEM"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
