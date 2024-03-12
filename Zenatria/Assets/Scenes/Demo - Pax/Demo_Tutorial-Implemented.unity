@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6939,10 +6939,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The first step is learning the basics, The Pathway is where the enemies
-    will follow until it makes it to the end.
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b56211f257c684b42a568dbaf8eb3b95, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7006,7 +7005,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -518.2109, w: -1.9690528}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1157452420
@@ -7599,8 +7598,9 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 'Hello and welcome to Zenatria, I''ll guide you through some basics
-            so you can assist us with defending our land from different monsters.
+          value: 'Hello  and  welcome  to  Zenatria,  I''ll  guide  you  through 
+            some  basics  so  you  can  assist  us  with  defending  our  land  from 
+            different  monsters.
 
 '
         - useVariable: 1
@@ -7638,9 +7638,9 @@ MonoBehaviour:
         - useVariable: 1
           name: Skip?
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: 1
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -8022,8 +8022,8 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: This path is where the enemies will try to assault the town we are
-            protecting.
+          value: This  path  is  where  the  enemies  will  try  to  assault  the 
+            town  we  are  protecting.
         - useVariable: 1
           name: Tutorial Text
           tooltip: 
@@ -8326,7 +8326,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101
-        actionIsOpen: 0100
+        actionIsOpen: 0101
         actionStartIndex: 0000000005000000
         actionHashCodes: b2cf100043e24103
         unityObjectParams: []
@@ -8824,8 +8824,8 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: "Down here is your health if you run out you\u2019ll have to leave
-            letting them win.\n"
+          value: "Down  here  is  your  health  if  you  run  out  you\u2019ll  have 
+            to  leave  letting  them  win.\n"
         - useVariable: 1
           name: Tutorial Text
           tooltip: 
@@ -9641,9 +9641,9 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: "but if you hover over your health then you can see different buildings
-            to defend the land, you\u2019ll show them where to set up and they will
-            defend the onslaught of enemies. \n"
+          value: "but  if  you  hover  over  your  health  then  you  can  see  different 
+            buildings  to  defend  the  land,  you\u2019ll  show  them  where  to 
+            set  up  and  they  will  defend  the  onslaught  of  enemies. \n"
         - useVariable: 1
           name: Tutorial Text
           tooltip: 
@@ -12848,8 +12848,8 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 195.15625
-        y: 614.9297
+        x: 176.3125
+        y: 623.1406
         width: 204
         height: 32
       isBreakpoint: 0
@@ -13370,7 +13370,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Try Placing a Tower Now!
+          value: Try  Placing  a  Tower  Now!
         - useVariable: 1
           name: Tutorial Text
           tooltip: 
@@ -15640,7 +15640,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 1
+        value: 0
       stringVariables:
       - useVariable: 1
         name: Tutorial Text
@@ -17681,6 +17681,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1626032715671247755, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1626032716037051094, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
       propertyPath: m_Name
       value: AnimationL
@@ -17691,6 +17695,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1626032716037051096, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
       propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: tutorial
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}

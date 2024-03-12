@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7000
-  m_Sprite: {fileID: 21300000, guid: 04e44f9081f144a22bd74d4372153b94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d07b46ba6ce26d34abec03c811ae9fb7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 0.32, y: 0.64}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -124,5 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe427e9d36aa1ec4b99d4df70a9a5ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerCost: 5
   spriteRenderer: {fileID: 2141970156370056674}
   towerToBuild: {fileID: 1480919435630095399, guid: 8290f5010ef8241fab05b4ac8f96e5ca, type: 3}
+  rangeVisualizer: {fileID: 0}

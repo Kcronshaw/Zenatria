@@ -118,24 +118,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3497023297326052231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 792d0e95e96643b47baee9643ac4bb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: Slime
-  speed: 0.75
-  target: {fileID: 0}
-  wavepointIndex: 0
-  distanceToTarget: 0
-  health: 10
-  damageDealt: 7
-  spawner: {fileID: 0}
-  dying: 0
-  spriteRenderer: {fileID: 0}
-  babySlime: {fileID: 1690532299642731021, guid: a041626804bb0447eb96b82c404699fd, type: 3}
-  numberOfBabies: 5
-  parentSlime: {fileID: 0}
-  parentSlimeScript: {fileID: 0}
-  spawnerObject: {fileID: 0}
+  _enemyType: 
+  _speed: 1
+  _wavepointIndex: 0
+  _distanceToTarget: 0
+  _health: 0
+  _damageDealt: 1
+  _spawnerObject: {fileID: 0}
+  _spawner: {fileID: 0}
+  _dying: 0
+  _spriteRenderer: {fileID: 0}
+  _healthbar: {fileID: 0}
+  _babySlime: {fileID: 0}
+  _numberOfBabies: 5
 --- !u!61 &6146968993431430422
 BoxCollider2D:
   m_ObjectHideFlags: 0

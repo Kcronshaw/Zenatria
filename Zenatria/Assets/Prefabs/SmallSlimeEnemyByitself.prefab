@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4769910315030637013}
   - component: {fileID: 7585035285404986704}
   - component: {fileID: 8124047821487027312}
-  - component: {fileID: -5384509836020196371}
   - component: {fileID: -7199828704269712510}
   - component: {fileID: 7932263296849294058}
+  - component: {fileID: -781363316160108075}
   m_Layer: 6
   m_Name: SmallSlimeEnemyByitself
   m_TagString: Enemy
@@ -109,33 +109,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-5384509836020196371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690532299642731021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyType: Slime
-  speed: 2
-  target: {fileID: 0}
-  wavepointIndex: 0
-  distanceToTarget: 0
-  health: 2
-  damageDealt: 2
-  spawner: {fileID: 0}
-  dying: 0
-  spriteRenderer: {fileID: 0}
-  babySlime: {fileID: 0}
-  numberOfBabies: 0
-  parentSlime: {fileID: 0}
-  parentSlimeScript: {fileID: 0}
-  spawnerObject: {fileID: 0}
 --- !u!61 &-7199828704269712510
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -183,3 +156,28 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-781363316160108075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690532299642731021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792d0e95e96643b47baee9643ac4bb22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyType: BabySlime
+  _speed: 1
+  _wavepointIndex: 0
+  _distanceToTarget: 0
+  _health: 1
+  _damageDealt: 1
+  _spawnerObject: {fileID: 0}
+  _spawner: {fileID: 0}
+  _dying: 0
+  _spriteRenderer: {fileID: 0}
+  _healthbar: {fileID: 0}
+  _babySlime: {fileID: 0}
+  _numberOfBabies: 5
