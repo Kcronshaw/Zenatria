@@ -135,8 +135,8 @@ MonoBehaviour:
   _healthbar: {fileID: 5255067725537710039}
   _moneyDropped: 20
   animator: {fileID: 0}
-  _slimeSpawner: {fileID: 0}
-  _numberOfBabies: 0
+  _slimeSpawner: {fileID: 1580786620032583146, guid: 67db03ffe577c6344982080ede86e0cd, type: 3}
+  _numberOfBabies: 5
 --- !u!61 &3957791593714142170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5991302555272715595}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee158225ee1e59f4791627785501d950, type: 3}
   m_Name: 

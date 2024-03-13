@@ -47,7 +47,7 @@ MonoBehaviour:
   money: 100
   moneyText: {fileID: 0}
   holdingTower: 0
-  health: 100
+  health: 50
   healthText: {fileID: 0}
   fakeFighterPrefab: {fileID: 7599503767695287067, guid: bff299a3194a74822ab638ad712e497b, type: 3}
   fakeWizardPrefab: {fileID: 8190623242779939254, guid: 5fef9961ac9f24c0193db4ad7013e3e5, type: 3}

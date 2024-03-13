@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Serialization;
-using UnityEditor.Callbacks;
+//using UnityEditor.Callbacks;
 
 public class Spawner : MonoBehaviour
 {
@@ -88,9 +88,9 @@ public class Spawner : MonoBehaviour
 
 
 
-        WaveCount = waveIndex;
+        
         waveIndex++;
-
+        WaveCount = waveIndex;
     }
 
     void SpawnEnemy(GameObject enemy)

@@ -375,7 +375,7 @@ MonoBehaviour:
   _speed: 0.75
   _wavepointIndex: 0
   _distanceToTarget: 0
-  _health: 10
+  _health: 15
   _damageDealt: 7
   _spawnerObject: {fileID: 0}
   _spawner: {fileID: 0}
