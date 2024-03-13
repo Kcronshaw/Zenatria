@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TowerBuilder : MonoBehaviour
 {
@@ -14,9 +15,12 @@ public class TowerBuilder : MonoBehaviour
     public int health = 100;
     public Text healthText;
 
+    [SerializeField] GameObject loseState;
 
     public GameObject fakeFighterPrefab;
     public GameObject fakeWizardPrefab;
+
+
 
     private void Awake()
     {
@@ -42,7 +46,8 @@ public class TowerBuilder : MonoBehaviour
         healthText.text = "x" + health.ToString();
         if (health <= 0)
         {
-            Debug.Log("KILL YOURSELF NOW!!!");
+            loseState.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 
@@ -84,6 +89,11 @@ public class TowerBuilder : MonoBehaviour
 
 
         moneyText.text = money.ToString();
+    }
+
+    public void ResetLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }

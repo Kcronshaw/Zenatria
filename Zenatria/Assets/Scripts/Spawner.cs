@@ -77,6 +77,7 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
+        WaveCount = waveIndex + 1;
 
         runBefore = false;
         
@@ -94,10 +95,7 @@ public class Spawner : MonoBehaviour
         }
 
 
-
-        
         waveIndex++;
-        WaveCount = waveIndex;
     }
 
     void SpawnEnemy(GameObject enemy)
