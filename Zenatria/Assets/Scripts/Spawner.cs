@@ -12,6 +12,7 @@ public class Spawner : MonoBehaviour
     public int EnemiesAlive = 0;
     public Transform spawnPoint;
     public int WaveCount;
+    public int EnemyCount;
     [SerializeField] Text enemiesAliveText;
 
     [SerializeField] int waveIndex;
@@ -39,6 +40,7 @@ public class Spawner : MonoBehaviour
         // Debug.Log("Running spawner update");
         if (EnemiesAlive > 0)
         {
+            EnemyCount = EnemiesAlive;
             return;
         }
 
@@ -61,6 +63,7 @@ public class Spawner : MonoBehaviour
     {
         if (EnemiesAlive > 0)
         {
+            EnemyCount = EnemiesAlive;
             return;
         }
 
@@ -102,6 +105,7 @@ public class Spawner : MonoBehaviour
     public void EnemyKilled()
     {
         EnemiesAlive--;
+        EnemyCount = EnemiesAlive;
 
     }
 

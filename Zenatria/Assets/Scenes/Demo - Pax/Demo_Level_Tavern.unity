@@ -260,6 +260,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &227031946 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 406234353334845671, guid: 0cd464111d19819438b8765377b4a1c5, type: 3}
+  m_PrefabInstance: {fileID: 1046182963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a378014b747a86940a9b802a8f1dfb60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &312395077
 GameObject:
   m_ObjectHideFlags: 0
@@ -6841,6 +6852,108 @@ RectTransform:
   m_AnchoredPosition: {x: 90.091064, y: 0}
   m_SizeDelta: {x: 237.6738, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &477021777
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4643007637203580733}
+    m_Modifications:
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299896766538271425, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+      propertyPath: m_Name
+      value: Text (TMP)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+--- !u!224 &477021778 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1299896766538271424, guid: f380c6e520c0e8443a6811c6979ca871, type: 3}
+  m_PrefabInstance: {fileID: 477021777}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &587037670
 GameObject:
   m_ObjectHideFlags: 0
@@ -10356,13 +10469,145 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4643007636552021211}
     - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
-      propertyPath: waves.Array.data[1].miniWave.Array.data[0].enemy
+      propertyPath: waves.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[2].miniWave.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[0].miniWave.Array.data[0].rate
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[2].miniWave.Array.data[2].rate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.data[0].rate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.data[1].rate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.data[2].rate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[0].rate
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[1].rate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[2].rate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[3].rate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[0].miniWave.Array.data[0].count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[0].miniWave.Array.data[0].enemy
       value: 
       objectReference: {fileID: 1690532299642731021, guid: f436d6ce0055e6a46aad2a14c4c97c19, type: 3}
     - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[1].miniWave.Array.data[0].count
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[1].miniWave.Array.data[0].enemy
+      value: 
+      objectReference: {fileID: 3497023297326052231, guid: 4a2764e1379f2c24c9e3d675144897db, type: 3}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
       propertyPath: waves.Array.data[2].miniWave.Array.data[0].enemy
       value: 
+      objectReference: {fileID: 3497023297326052231, guid: 4a2764e1379f2c24c9e3d675144897db, type: 3}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[2].miniWave.Array.data[1].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[2].miniWave.Array.data[2].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[2].miniWave.Array.data[2].enemy
+      value: 
       objectReference: {fileID: 1690532299642731021, guid: f436d6ce0055e6a46aad2a14c4c97c19, type: 3}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.data[0].count
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.data[0].enemy
+      value: 
+      objectReference: {fileID: 4235755898866716828, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.data[1].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.data[1].enemy
+      value: 
+      objectReference: {fileID: 4235755898866716828, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.data[2].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[3].miniWave.Array.data[2].enemy
+      value: 
+      objectReference: {fileID: 1690532299642731021, guid: f436d6ce0055e6a46aad2a14c4c97c19, type: 3}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[0].count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[0].enemy
+      value: 
+      objectReference: {fileID: 3497023297326052231, guid: 4a2764e1379f2c24c9e3d675144897db, type: 3}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[1].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[1].enemy
+      value: 
+      objectReference: {fileID: 4235755898866716828, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[2].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[2].enemy
+      value: 
+      objectReference: {fileID: 1690532299642731021, guid: f436d6ce0055e6a46aad2a14c4c97c19, type: 3}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[3].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626032716407675717, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
+      propertyPath: waves.Array.data[4].miniWave.Array.data[3].enemy
+      value: 
+      objectReference: {fileID: 4235755898866716828, guid: 7015691caf1e54b44a00510ba7f79820, type: 3}
     - target: {fileID: 1626032716426847024, guid: 42d9b1c705b1c564181cd1a83dfc62e1, type: 3}
       propertyPath: m_Name
       value: Enemy Spawning Type Beat
@@ -11152,6 +11397,7 @@ GameObject:
   - component: {fileID: 4643007636552021208}
   - component: {fileID: 4643007636552021210}
   - component: {fileID: 4643007636552021211}
+  - component: {fileID: 4643007636552021212}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -11201,6 +11447,422 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
+--- !u!114 &4643007636552021212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4643007636552021209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetProperty
+        - HutongGames.PlayMaker.Actions.SetProperty
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000002000000
+        actionHashCodes: 5ac852045ac85204
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams:
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 2121845419}
+          TargetTypeName: Spawner
+          PropertyName: EnemiesAlive
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 1
+            name: EnemyCount
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Int32
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          EnumParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            enumName: 
+            intValue: 0
+          ArrayParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+          setProperty: 0
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 4643007636552021211}
+          TargetTypeName: UnityEngine.UI.Text
+          PropertyName: text
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 1
+            name: EnemyCount
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.String
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          EnumParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            enumName: 
+            intValue: 0
+          ArrayParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+          setProperty: 1
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 0101
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 24000000010000002400000001000000
+        paramName:
+        - targetProperty
+        - everyFrame
+        - targetProperty
+        - everyFrame
+        paramDataPos: 00000000000000000100000001000000
+        paramByteDataSize: 00000000010000000000000001000000
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables:
+      - useVariable: 1
+        name: EnemyCount
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 00000000
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!222 &4643007636777445037
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11303,7 +11965,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 04e44f9081f144a22bd74d4372153b94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d07b46ba6ce26d34abec03c811ae9fb7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11331,7 +11993,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 40.7088}
-  m_SizeDelta: {x: 81.4176, y: 81.4176}
+  m_SizeDelta: {x: 32, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4643007636796940675
 CanvasRenderer:
@@ -11916,7 +12578,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 227031946}
         m_TargetAssemblyTypeName: TowerBuilder, Assembly-CSharp
         m_MethodName: createTower
         m_Mode: 3
@@ -12673,7 +13335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4643007637083691460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15075,6 +15737,7 @@ RectTransform:
   - {fileID: 4643007638381822696}
   - {fileID: 4643007637058550281}
   - {fileID: 8024039884882870896}
+  - {fileID: 477021778}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15742,7 +16405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dbc814a2563b048d4882c36c53337aad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77fdd208c3385ff4b9a961d38788f59f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15770,7 +16433,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 81.4176, y: 81.4176}
+  m_SizeDelta: {x: 32, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &4643007637587944152
 RectTransform:
@@ -18203,14 +18866,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 227031946}
         m_TargetAssemblyTypeName: TowerBuilder, Assembly-CSharp
         m_MethodName: createTower
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18575,9 +19238,9 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 0}
+            value: {fileID: 2121845419}
           TargetTypeName: Spawner
-          PropertyName: 
+          PropertyName: WaveCount
           BoolParameter:
             useVariable: 0
             name: 
@@ -18593,8 +19256,8 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           IntParameter:
-            useVariable: 0
-            name: 
+            useVariable: 1
+            name: Wave Count
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -18652,7 +19315,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            typeName: 
+            typeName: System.Int32
             value: {fileID: 0}
           MaterialParameter:
             useVariable: 0
@@ -18795,7 +19458,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 0}
+            value: {fileID: 4643007636552021211}
           TargetTypeName: UnityEngine.UI.Text
           PropertyName: text
           BoolParameter:
@@ -18903,7 +19566,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: HutongGames.PlayMaker.None
+            enumName: 
             intValue: 0
           ArrayParameter:
             useVariable: 0
@@ -18912,7 +19575,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             type: -1
-            objectTypeName: UnityEngine.Object
+            objectTypeName: 
             floatValues: []
             intValues: 
             boolValues: 
