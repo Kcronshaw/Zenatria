@@ -121,13 +121,24 @@ public class EnemyJoe : MonoBehaviour
         set => _healthbar = value;
     }
 
+    [SerializeField]
+    [FormerlySerializedAs("moneyDropped")]
+    protected int _moneyDropped = 20;
+    public int moneyDropped
+    {
+        get => _moneyDropped;
+        set => _moneyDropped = value;
+    }
+
+    [SerializeField] protected Animator animator;
+
 
 
 
 
 
     protected Bridge bridgeOn = null;
-    protected PathSegment currentPath;
+    public PathSegment currentPath;
     public PathSegment CurrentPath
     {
         get => currentPath;
@@ -140,6 +151,8 @@ public class EnemyJoe : MonoBehaviour
         transform.position = Waypoints.paths[0].Begin;
         currentPath = Waypoints.paths[0];
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = this.gameObject.GetComponent<Animator>();
+
 
         spawnerObject = GameObject.FindGameObjectWithTag("Spawner");
 
@@ -180,6 +193,26 @@ public class EnemyJoe : MonoBehaviour
 
 
         Vector3 dir = currentPath.Direction(); // this is normalized
+
+        if (dir.y >= 0.8) //north
+        {
+            animator.SetInteger("NESW", 1);
+        }
+        else if (dir.x >= 0.8) //east
+        {
+            animator.SetInteger("NESW", 2);
+        }
+        else if (dir.y <= -0.8) //south
+        {
+            animator.SetInteger("NESW", 3);
+        }
+        else if (dir.x <= -0.8) //west
+        {
+            animator.SetInteger("NESW", 4);
+        }
+
+
+
         transform.Translate(dir * speed * Time.deltaTime);
 
         distanceToTarget = Vector3.Distance(transform.position, currentPath.End);
@@ -222,18 +255,13 @@ public class EnemyJoe : MonoBehaviour
     public virtual void TakeDamage(int i)
     {
         health -= i;
+        healthbar.ChangeHealth(health);
+
 
 
         if (health <= 0 && dying == false)
         {
-
-            dying = true;
-
-            Debug.Log("running");
-            spawner.GetComponent<Spawner>().EnemyKilled();
-            Destroy(this.gameObject);
-        
-
+            DeathMoment();
         }
     }
 
@@ -243,6 +271,14 @@ public class EnemyJoe : MonoBehaviour
     }
 
 
-    
+    public void DeathMoment()
+    {
+        dying = true;
+
+        TowerBuilder.instance.CostUpdate(moneyDropped, true);
+        Debug.Log("running");
+        spawner.GetComponent<Spawner>().EnemyKilled();
+        Destroy(this.gameObject);
+    }
 
 }

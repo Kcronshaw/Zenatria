@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
 
     public int EnemiesAlive = 0;
     public Transform spawnPoint;
+    public int WaveCount;
     [SerializeField] Text enemiesAliveText;
 
     [SerializeField] int waveIndex;
@@ -58,6 +59,11 @@ public class Spawner : MonoBehaviour
     }
     public void SpawnWaves()
     {
+        if (EnemiesAlive > 0)
+        {
+            return;
+        }
+
         StartCoroutine(SpawnWave());
     }
 
@@ -67,7 +73,6 @@ public class Spawner : MonoBehaviour
 
         runBefore = false;
         
-        Debug.Log(waveIndex);
 
         for(int i = 0; i <= waves[waveIndex].miniWave.Count - 1; i++ )
         {
@@ -81,9 +86,9 @@ public class Spawner : MonoBehaviour
             }
         }
 
-            
 
 
+        WaveCount = waveIndex;
         waveIndex++;
 
     }

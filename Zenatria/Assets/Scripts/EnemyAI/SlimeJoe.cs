@@ -1,5 +1,7 @@
+using HutongGames.PlayMaker.Actions;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,11 +11,11 @@ public class SlimeJoe : EnemyJoe
 
     [SerializeField]
     [FormerlySerializedAs("babySlime")]
-    private GameObject _babySlime;
-    public GameObject babySlime
+    private GameObject _slimeSpawner;
+    public GameObject slimeSpawner
     {
-        get => _babySlime;
-        set => _babySlime = value;
+        get => _slimeSpawner;
+        set => _slimeSpawner = value;
     }
 
     [SerializeField]
@@ -30,38 +32,39 @@ public class SlimeJoe : EnemyJoe
     {
         health = health - i;
 
+        healthbar.ChangeHealth(health);
 
         if (health <= 0 && dying == false)
         {
 
             dying = true;
 
-            SlimeSplit(transform, this);
             spawner.GetComponent<Spawner>().EnemyKilled();
-            Destroy(gameObject);
 
+            SlimeSplit(this.gameObject.transform, this);
+
+            StartCoroutine(NotDeadYetButSoon());
         }
     }
 
     private static void SlimeSplit(Transform tran, SlimeJoe self)
     {
-        for (int i = 0; i < self.numberOfBabies; i++)
-        {
-            GameObject babyslime = Instantiate(self.babySlime, tran);
-            self.spawner.EnemiesAlive++;
-            BabySlimeJoe babieScripto = babyslime.GetComponent<BabySlimeJoe>();
-            babieScripto.currentPath = self.currentPath;
-            babieScripto.wavepointIndex = self.wavepointIndex;
-            self.babySlime.transform.SetParent(null, true);
-        }
+
+        GameObject slimespawner = Instantiate(self.slimeSpawner, self.transform.position, Quaternion.identity);
+        SlimeSpawner spawner = slimespawner.GetComponent<SlimeSpawner>();
+        spawner.currentPath = self.currentPath;
+        spawner.wavepointIndex = self.wavepointIndex;
+        spawner.numberOfBabies = self.numberOfBabies;
+        self.spawner.transform.SetParent(null, true);
+
+        
 
     }   
 
-    /*
-    private static void SlimeSplitJoe()
+    public IEnumerator NotDeadYetButSoon()
     {
-
+        yield return new WaitForSeconds(0.05f);
+        Destroy(this.gameObject);
     }
-    */
 
 }

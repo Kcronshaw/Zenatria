@@ -20,7 +20,6 @@ public class FighterTower : GenericTower
             distanceToTarget = Vector3.Distance(miniTower.transform.position, targetedEnemy.transform.position);
             if (distanceToTarget >= miniRange)
             {
-                Debug.Log("blud is runnin");
                 miniTower.transform.position = Vector3.MoveTowards(miniTower.transform.position, targetedEnemy.transform.position, step);
             }
             else if (Time.time >= nextAttack)
