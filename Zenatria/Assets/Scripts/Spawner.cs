@@ -11,7 +11,11 @@ public class Spawner : MonoBehaviour
 
     public int EnemiesAlive = 0;
     public Transform spawnPoint;
+
     public int WaveCount;
+    public Text wavecountText;
+    private string currentWave;
+
     public int EnemyCount;
     [SerializeField] Text enemiesAliveText;
 
