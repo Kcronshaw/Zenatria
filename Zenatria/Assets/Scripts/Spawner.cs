@@ -58,6 +58,11 @@ public class Spawner : MonoBehaviour
     }
     public void SpawnWaves()
     {
+        if (EnemiesAlive > 0)
+        {
+            return;
+        }
+
         StartCoroutine(SpawnWave());
     }
 
@@ -67,7 +72,6 @@ public class Spawner : MonoBehaviour
 
         runBefore = false;
         
-        Debug.Log(waveIndex);
 
         for(int i = 0; i <= waves[waveIndex].miniWave.Count - 1; i++ )
         {

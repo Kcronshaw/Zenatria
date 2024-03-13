@@ -15,7 +15,8 @@ public class TowerBuilder : MonoBehaviour
     public Text healthText;
 
 
-    public GameObject fakeTowerPrefab;
+    public GameObject fakeFighterPrefab;
+    public GameObject fakeWizardPrefab;
 
     private void Awake()
     {
@@ -53,7 +54,10 @@ public class TowerBuilder : MonoBehaviour
             switch (towerToBuild)
             {
                 case 1:
-                    Instantiate(fakeTowerPrefab);
+                    Instantiate(fakeFighterPrefab);
+                    break;
+                case 2:
+                    Instantiate(fakeWizardPrefab);
                     break;
                 default:
                     break;
@@ -67,8 +71,18 @@ public class TowerBuilder : MonoBehaviour
         
     }
 
-    public void CostUpdate()
+    public void CostUpdate(int extraCash, bool addingCash)
     {
+        if (addingCash)
+        {
+            money += extraCash;
+        }
+        if (!addingCash)
+        {
+            money -= extraCash;
+        }
+
+
         moneyText.text = money.ToString();
     }
 

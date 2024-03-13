@@ -126,7 +126,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.157033}
     oldSize: {x: 0.33, y: 0.47}
     newSize: {x: 0.26, y: 0.37}
     adaptiveTilingThreshold: 0.5
@@ -193,3 +193,4 @@ MonoBehaviour:
   _dying: 0
   _spriteRenderer: {fileID: 0}
   _healthbar: {fileID: 0}
+  _moneyDropped: 20
