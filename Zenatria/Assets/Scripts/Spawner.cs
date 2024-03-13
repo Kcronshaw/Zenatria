@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
 
     public int EnemiesAlive = 0;
     public Transform spawnPoint;
+    public int WaveCount;
     [SerializeField] Text enemiesAliveText;
 
     [SerializeField] int waveIndex;
@@ -85,9 +86,9 @@ public class Spawner : MonoBehaviour
             }
         }
 
-            
 
 
+        WaveCount = waveIndex;
         waveIndex++;
 
     }

@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe427e9d36aa1ec4b99d4df70a9a5ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerCost: 10
+  towerCost: 200
   spriteRenderer: {fileID: 2141970156370056674}
   towerToBuild: {fileID: 1480919435630095399, guid: 8290f5010ef8241fab05b4ac8f96e5ca, type: 3}
   rangeVisualizer: {fileID: 0}

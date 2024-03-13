@@ -372,17 +372,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyType: 
-  _speed: 1
+  _speed: 0.75
   _wavepointIndex: 0
   _distanceToTarget: 0
   _health: 10
-  _damageDealt: 1
+  _damageDealt: 7
   _spawnerObject: {fileID: 0}
   _spawner: {fileID: 0}
   _dying: 0
   _spriteRenderer: {fileID: 0}
   _healthbar: {fileID: 1044691202}
   _moneyDropped: 20
+  animator: {fileID: 0}
   _slimeSpawner: {fileID: 1580786620032583146, guid: 67db03ffe577c6344982080ede86e0cd, type: 3}
   _numberOfBabies: 5
 --- !u!61 &6146968993431430422
