@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7000
-  m_Sprite: {fileID: 21300000, guid: 04e44f9081f144a22bd74d4372153b94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d07b46ba6ce26d34abec03c811ae9fb7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   _attackSpeed: 5
   _rangeVisual: {fileID: 0}
   _currentLevel: 1
-  _attackRange: 5
+  _attackRange: 3
   _distanceToTarget: 0.2
   _miniSpeed: 2
   _miniTower: {fileID: 0}

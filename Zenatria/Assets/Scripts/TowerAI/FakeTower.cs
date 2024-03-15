@@ -19,7 +19,7 @@ public class FakeTower : MonoBehaviour
         //TowerBuilder.instance.holdingTower = true;
 
         enemyDetector = towerToBuild.GetComponentInChildren<EnemyDetector>();
-        rangeVisualizer.transform.localScale = new Vector3(2 * enemyDetector.range, 2 * enemyDetector.range);
+        //rangeVisualizer.transform.localScale = new Vector3(2 * enemyDetector.range, 2 * enemyDetector.range);
 
     }
 
@@ -54,9 +54,7 @@ public class FakeTower : MonoBehaviour
         {
             if (TowerBuilder.instance.money >= towerCost)
             {
-                TowerBuilder.instance.money -= towerCost;
-                TowerBuilder.instance.CostUpdate();
-                Debug.Log(TowerBuilder.instance.money + " is current balance");
+                TowerBuilder.instance.CostUpdate(towerCost, false);
                 PlaceTower();
             }
         }

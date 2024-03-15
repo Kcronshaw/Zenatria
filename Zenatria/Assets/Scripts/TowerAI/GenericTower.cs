@@ -193,7 +193,6 @@ public class GenericTower : MonoBehaviour
 
             if (distance >= attackRange)
             {
-                Debug.Log(distance);
                 continue;
             }
 

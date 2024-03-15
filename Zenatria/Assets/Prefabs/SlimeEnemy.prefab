@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 572942978003311396}
   - component: {fileID: 529180185798966153}
   - component: {fileID: 171478188856371740}
-  - component: {fileID: 2590636176776483187}
   - component: {fileID: 3957791593714142170}
   - component: {fileID: 9099326734305613357}
   m_Layer: 6
@@ -33,7 +32,8 @@ Transform:
   m_LocalPosition: {x: 2.5001068, y: -2.1409893, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5255067725537710036}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -119,51 +119,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5991302555272715595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 792d0e95e96643b47baee9643ac4bb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: Slime
-  speed: 0.75
-  target: {fileID: 0}
-  wavepointIndex: 0
-  distanceToTarget: 0
-  health: 6
-  damageDealt: 7
-  spawner: {fileID: 0}
-  dying: 0
-  spriteRenderer: {fileID: 0}
-  babySlime: {fileID: 1690532299642731021, guid: a041626804bb0447eb96b82c404699fd, type: 3}
-  numberOfBabies: 5
-  parentSlime: {fileID: 0}
-  parentSlimeScript: {fileID: 0}
-  spawnerObject: {fileID: 0}
---- !u!114 &2590636176776483187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5991302555272715595}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 809e2059d05ec8b46bccfbc765de92fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyType: Slime
-  speed: 2
-  target: {fileID: 0}
-  wavepointIndex: 0
-  distanceToTarget: 0
-  health: 3
-  damageDealt: 1
-  spawner: {fileID: 0}
-  dying: 0
-  spriteRenderer: {fileID: 0}
-  babySlime: {fileID: 3573834380232408566, guid: 90c4ee1edcfe78949a31c3b77ab9db09, type: 3}
-  numberOfBabies: 5
-  parentSlime: {fileID: 0}
-  parentSlimeScript: {fileID: 0}
-  spawnerObject: {fileID: 0}
+  _enemyType: Slime
+  _speed: 0.75
+  _wavepointIndex: 0
+  _distanceToTarget: 0
+  _health: 6
+  _damageDealt: 7
+  _spawnerObject: {fileID: 0}
+  _spawner: {fileID: 0}
+  _dying: 0
+  _spriteRenderer: {fileID: 0}
+  _healthbar: {fileID: 5255067725537710039}
+  _moneyDropped: 20
+  animator: {fileID: 0}
+  _slimeSpawner: {fileID: 0}
+  _numberOfBabies: 0
 --- !u!61 &3957791593714142170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -206,3 +179,76 @@ MonoBehaviour:
   normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
+--- !u!1001 &4231823552643794753
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5821565000473697650}
+    m_Modifications:
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.317
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239253438970235031, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+      propertyPath: m_Name
+      value: Healthbar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+--- !u!4 &5255067725537710036 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8239253438970235029, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+  m_PrefabInstance: {fileID: 4231823552643794753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5255067725537710039 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8239253438970235030, guid: 89b44a0d7a89ea844bc9d2f231109c63, type: 3}
+  m_PrefabInstance: {fileID: 4231823552643794753}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257cb54b63a9f264699890ada70eb111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
