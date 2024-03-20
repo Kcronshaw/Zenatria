@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d143a29997b3c4089c2b7f72fd3582, type: 3}
   m_Name: EasyFeedbackConfig
   m_EditorClassIdentifier: 
-  StoreLocal: 0
+  StoreLocal: 1
   Token: ATTAa0fc562f7b2dff372527a0c26e6539dda8bee1df95361edc3ab47c18b10ff96b2DDDF409
   Board:
     Id: 65c3af37806585b0233061e5
