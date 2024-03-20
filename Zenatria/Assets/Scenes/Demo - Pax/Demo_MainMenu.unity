@@ -14654,7 +14654,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 3
+          value: 100
         - useVariable: 1
           name: Random Number
           tooltip: 
@@ -14749,7 +14749,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2
+          value: 25
         - useVariable: 1
           name: Random Number
           tooltip: 
