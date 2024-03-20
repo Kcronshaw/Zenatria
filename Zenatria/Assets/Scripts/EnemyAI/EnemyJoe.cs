@@ -217,7 +217,7 @@ public class EnemyJoe : MonoBehaviour
 
         distanceToTarget = Vector3.Distance(transform.position, currentPath.End);
 
-        if (distanceToTarget <= 0.1f) // when you reach the end of a given path
+        if (distanceToTarget <= 0.15f) // when you reach the end of a given path
         {
             Debug.Log("End of Path reached for index " + wavepointIndex + ".");
             if (wavepointIndex >= Waypoints.paths.Length - 1) // checks if we're at the last path // subtract 1 for each branched path

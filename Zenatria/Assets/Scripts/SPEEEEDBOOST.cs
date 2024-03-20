@@ -23,7 +23,6 @@ public class SPEEEEDBOOST : MonoBehaviour
 
 
         Time.timeScale = timescale;
-        Debug.Log(Time.timeScale);
 
     }
 

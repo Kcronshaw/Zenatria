@@ -7,7 +7,7 @@ using UnityEngine;
 public class Waypoints : MonoBehaviour
 {
 
-
+    [SerializeField]
     public static PathSegment[] paths;
 
     private void Awake()

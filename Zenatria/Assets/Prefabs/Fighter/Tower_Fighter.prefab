@@ -148,7 +148,7 @@ MonoBehaviour:
   _currentLevel: 1
   _attackRange: 2
   _distanceToTarget: 0.2
-  _miniSpeed: 2
+  _miniSpeed: 3
   _miniTower: {fileID: 7700438263464156100}
   miniRange: 0.4
   enemy: {fileID: 0}
